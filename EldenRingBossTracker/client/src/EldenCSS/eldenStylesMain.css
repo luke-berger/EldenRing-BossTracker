@@ -1,3 +1,30 @@
-body {
-    background-image: url("../EldenPictures/eldenRingIndex.jpg");
+* {
+  box-sizing: border-box;
+}
+
+#eldenring-bg {
+  height: 100vh;
+  background: url(../EldenPictures/elden-ring-bg.webp) no-repeat center center
+    fixed;
+  background-color: linear-gradient(
+    180deg,
+    rgba(36, 100, 119, 1) 0%,
+    rgba(135, 143, 77, 1) 51%,
+    rgba(14, 57, 57, 1) 100%
+  );
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#eldensysteme-logo {
+  margin-top: 11%;
+  min-width: 350px;
+  max-width: 40%;
+  height: auto;
 }
