@@ -20,7 +20,7 @@
     <!-- Hauptcontainer -->
     <main id="eldenringCards-bg" class="h-screen bg-cover bg-center text-white">
       <!-- Grid-Layout -->
-      <main id="CardsMainGrid" class="grid grid-rows-[auto_1fr] h-full">
+      <div id="CardsMainGrid">
         <!-- Header -->
         <div id="Header" class="bg-zinc-800">
           <div id="headerImg1" class="w-7">
@@ -73,11 +73,55 @@
                 <img src="../EldenPictures/line.png" alt="Line" />
               </div>
             </div>
-            <div id="theboys" class="flex">
-              THE STARS HAVE ALIGNED
+            <div id="theboys" class="flex justify-evenly m-24">
+              <div id="johannImgContainer" class="w-52">
+                <div id="johannImg">
+                  <img
+                    class="rounded-lg"
+                    src="../EldenPictures/devs/johann.jpg"
+                    alt="Picture Of Dev-Johann"
+                  />
+                </div>
+
+                <div id="devText">Johann Gutzke</div>
+                <div class="text-center">
+                  Medieninformatiker<br />johann.gutzke@student.uni-luebeck.de
+                </div>
+              </div>
+
+              <div id="lukeImgContainer" class="w-52">
+                <div id="lukeImg">
+                  <img
+                    class="rounded-lg"
+                    src="../EldenPictures/devs/luke.jpg"
+                    alt="Picture Of Dev-Luke"
+                  />
+                </div>
+
+                <div id="devText">Luke Berger</div>
+                <div class="text-center">
+                  Medieninformatiker<br />luke.berger@student.uni-luebeck.de
+                </div>
+              </div>
+
+              <div id="niclasImgContainer" class="flex flex-col w-52">
+                <div id="niclasImg">
+                  <img
+                    class="rounded-lg"
+                    src="../EldenPictures/devs/niclas.jpg"
+                    alt="Picture Of Dev-Niclas"
+                  />
+                </div>
+
+                <div id="devText">Niclas Prapavat</div>
+                <div class="text-center">
+                  Medieninformatiker<br />niclas.prapavat@student.uni-luebeck.de
+                </div>
+              </div>
             </div>
           </div>
-      </main>
+        </div>
+      </div>
     </main>
   </body>
 </html>

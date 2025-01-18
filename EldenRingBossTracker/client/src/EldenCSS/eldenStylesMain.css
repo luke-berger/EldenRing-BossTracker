@@ -88,3 +88,13 @@
   background: rgba(0, 0, 0, 0.6); /* Transparenter Hintergrund */
   padding: 20px; /* Innenabstand */
 }
+
+#devText {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: large;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.235);
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+}
