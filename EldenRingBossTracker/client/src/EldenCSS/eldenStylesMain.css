@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Garamond;
 }
 
 #eldenring-bg {
@@ -22,9 +23,73 @@
   overflow: hidden;
 }
 
+#eldenringCards-bg {
+  height: 100vh;
+  background: url(../EldenPictures/EldenSysteme_background.jpg) no-repeat center
+    center fixed;
+  background-color: linear-gradient(
+    180deg,
+    rgba(36, 100, 119, 1) 0%,
+    rgba(135, 143, 77, 1) 51%,
+    rgba(14, 57, 57, 1) 100%
+  );
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
 #eldensysteme-logo {
   margin-top: 15%;
   min-width: 350px;
   max-width: 40%;
   height: auto;
+}
+
+.jmpButton {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 18px;
+  border: 2px solid #ffffff55;
+  text-align: center;
+  padding: 24px 50px;
+  transition: all 0.35s;
+  border-radius: 15px;
+  font-family: Garamond;
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+.jmpButton:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+}
+
+#CardsMainGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 3000%;
+  row-gap: 25%;
+}
+
+#Header {
+  border-bottom: #7c602a solid 2px;
+  grid-column: 1 / 1;
+}
+
+#headerImg3 {
+  grid-column: 1/ 1;
+}
+
+#Main {
+  border: #4e3d1b solid 3px;
+  grid-column: 1 / 3;
 }
