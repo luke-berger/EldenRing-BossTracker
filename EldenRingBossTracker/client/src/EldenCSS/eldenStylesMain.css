@@ -140,3 +140,19 @@
   margin-bottom: 10px;
   padding-bottom: 0px;
 }
+
+#navButtons {
+  color: rgb(220, 220, 220);
+  transition: all 0.35s;
+}
+
+#navButtons:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+#navButtonsPoint {
+  color: #a88237;
+  transition: all 0.35s;
+  cursor: default;
+}
