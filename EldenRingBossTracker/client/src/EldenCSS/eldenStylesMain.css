@@ -93,10 +93,22 @@
   align-items: start;
   border-top: 3px solid #4e3d1b; /* Goldener Rand */
   border-bottom: 5px solid #4e3d1b; /* Goldener Rand */
+  border-right: 4px solid #4e3d1b; /* Goldener Rand */
   background: rgba(0, 0, 0, 0.6); /* Transparenter Hintergrund */
   padding: 20px; /* Innenabstand */
   color: #a88237;
   text-decoration: underline;
+}
+
+#WikiMain {
+  display: flex; /* Zentrierung des Inhalts */
+  justify-content: start;
+  align-items: start;
+  border-top: 3px solid #4e3d1b; /* Goldener Rand */
+  border-bottom: 5px solid #4e3d1b; /* Goldener Rand */
+  border-left: 4px solid #4e3d1b; /* Goldener Rand */
+  background: rgba(0, 0, 0, 0.6); /* Transparenter Hintergrund */
+  padding: 20px; /* Innenabstand */
 }
 
 /* Header */
