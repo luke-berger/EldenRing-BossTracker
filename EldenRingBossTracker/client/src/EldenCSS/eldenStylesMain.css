@@ -72,7 +72,7 @@
 #CardsWikiGrid {
   display: grid;
   grid-template-rows: auto 1fr; /* Header bekommt automatische Höhe, Main nimmt den restlichen Platz */
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
   height: 100%;
   row-gap: 5%;
   column-gap: 3%;
