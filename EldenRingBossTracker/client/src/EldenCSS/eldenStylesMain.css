@@ -147,7 +147,7 @@
 }
 
 #navButtons:hover {
-  transform: scale(1.06);
+  transform: scale(1.09);
   cursor: pointer;
 }
 
@@ -155,4 +155,8 @@
   color: #a88237;
   transition: all 0.35s;
   cursor: default;
+}
+
+.filterBox input:checked ~ .checkmark {
+  background-color: #7c602a;
 }
