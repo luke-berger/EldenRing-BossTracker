@@ -9,6 +9,8 @@
     <link href="../EldenCSS/tailwind.css" rel="stylesheet" />
     <link href="../EldenCSS/eldenStylesMain.css" rel="stylesheet" />
 
+    <script type="module" src="./../EldenScripts/event-listener.ts"></script>
+    <script type="module" src="./../EldenScripts/EldenCards.ts"></script>
     <!-- Icon -->
     <link
       rel="icon"
@@ -92,7 +94,7 @@
               id="filterContainer"
               class="flex flex-row gap-5 justify-center items-center"
             >
-              <div>Filters:</div>
+              <div class="text-xl">Filters:</div>
 
               <div>
                 <input
@@ -101,7 +103,7 @@
                   class="filterBox"
                   value="Killed"
                 />
-                <label for="filterCheck1">Killed</label>
+                <label for="filterCheck1" class="text-xl pl-2">Killed</label>
               </div>
 
               <div>
@@ -111,7 +113,7 @@
                   class="filterBox"
                   value="Alive"
                 />
-                <label for="filterCheck2">Alive</label>
+                <label for="filterCheck2" class="text-xl pl-2">Alive</label>
               </div>
 
               <div>
@@ -121,7 +123,9 @@
                   class="filterBox"
                   value="Major"
                 />
-                <label for="filterCheck3">Major-Boss</label>
+                <label for="filterCheck3" class="text-xl pl-2"
+                  >Major-Boss</label
+                >
               </div>
 
               <div>
@@ -131,10 +135,15 @@
                   class="filterBox"
                   value="Progress"
                 />
-                <label for="filterCheck4">Progression-Boss</label>
+                <label for="filterCheck4" class="text-xl pl-2"
+                  >Progression-Boss</label
+                >
               </div>
             </div>
-            <div id="cardsContainer"></div>
+            <div
+              id="cards-container"
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-3 pr-3 pb-10"
+            ></div>
           </div>
         </main>
       </main>
