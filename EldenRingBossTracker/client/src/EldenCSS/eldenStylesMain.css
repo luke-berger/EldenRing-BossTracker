@@ -56,6 +56,8 @@
 
 /* Hintergrund für die Seite */
 #eldenringCards-bg {
+  min-height: 100vh; /* Mindestens Viewport-Höhe */
+  height: auto; /* Passt sich dynamisch der Höhe des Inhalts an */
   background: url(../EldenPictures/EldenSysteme_background.jpg) no-repeat center
     center fixed;
   background-size: cover;
@@ -65,17 +67,17 @@
 #CardsMainGrid {
   display: grid;
   grid-template-rows: auto 1fr; /* Header bekommt automatische Höhe, Main nimmt den restlichen Platz */
-  height: 100%;
-  row-gap: 5%;
+  min-height: 100vh; /* Höhe mindestens so groß wie der Viewport */
+  height: auto; /* Automatisch an die Inhalte anpassen */
 }
 
 #CardsWikiGrid {
   display: grid;
   grid-template-rows: auto 1fr; /* Header bekommt automatische Höhe, Main nimmt den restlichen Platz */
   grid-template-columns: 1fr 4fr;
-  height: 100%;
-  row-gap: 5%;
   column-gap: 3%;
+  min-height: 100vh; /* Höhe mindestens so groß wie der Viewport */
+  height: auto; /* Automatisch an die Inhalte anpassen */
 }
 
 #WikiHeader {
@@ -85,6 +87,7 @@
   padding: 10px;
   border-bottom: 2px solid #7c602a; /* Goldener Rand */
   gap: 25px;
+  margin-bottom: 3rem;
 }
 
 #sideBar {
@@ -118,6 +121,7 @@
   padding: 10px;
   border-bottom: 2px solid #7c602a; /* Goldener Rand */
   gap: 25px;
+  margin-bottom: 3rem;
 }
 
 /* Main Content */
@@ -129,6 +133,8 @@
   border-bottom: 5px solid #4e3d1b; /* Goldener Rand */
   background: rgba(0, 0, 0, 0.6); /* Transparenter Hintergrund */
   padding: 20px; /* Innenabstand */
+  flex-grow: 1; /* Nutzt verfügbaren Platz */
+  min-height: auto; /* Passt sich an Inhalte an */
 }
 
 #devText {
