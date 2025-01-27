@@ -102,6 +102,12 @@ function createCards(items: Item[]): void {
   // Neue Karten erstellen
   items.forEach((item) => {
     const card = document.createElement("div");
+
+    // Überprüfen, ob 'remembrance' in den Drops des Bosses vorhanden ist, um den goldenen Rand zu setzen
+    const isRemembranceBoss = item.drops.some((drop) =>
+      drop.toLowerCase().includes("remembrance")
+    );
+
     card.classList.add(
       "card",
       "rounded-md",
@@ -110,9 +116,8 @@ function createCards(items: Item[]): void {
       "shadow-lg",
       "bg-black", // Hintergrund schwarz
       "bg-opacity-50", // Leicht transparent
-      "border",
-      "border-white", // Weißer Rand
-      "relative" // Relativer Positionierungskontext für die Checkbox
+      "relative", // Relativer Positionierungskontext für die Checkbox
+      isRemembranceBoss ? "border-gold" : "border-white" // Goldener Rand für Remembrance Bosse, sonst weiß
     );
 
     const title = document.createElement("h2");
