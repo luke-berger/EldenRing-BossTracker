@@ -9,6 +9,9 @@
     <link href="../EldenCSS/tailwind.css" rel="stylesheet" />
     <link href="../EldenCSS/eldenStylesMain.css" rel="stylesheet" />
 
+    <script type="module" src="./../EldenScripts/event-listener.ts"></script>
+    <script type="module" src="./../EldenScripts/EldenNames.ts"></script>
+
     <!-- Icon -->
     <link
       rel="icon"
@@ -74,29 +77,43 @@
           </div>
         </div>
 
-        <div id="sideBar">
-          <div class="font-bold text-lg">
-            <a href="./EldenWiki.html">⟢ Starscourge Radahn</a>
-            <br />
-            <a href="./EldenWiki.html">⟢ Godrick the Grafted</a>
-            <br />
-            <a href="./EldenWiki.html">⟢ Renalla, Queen of the Full Moon</a>
-            <br />
-            <a href="./EldenWiki.html">⟢ Rykard, Lord of Blasphemy</a>
-            <br />
-            <a href="./EldenWiki.html">⟢ Mohg, Lord of Blood </a>
-            <br />
-            <a href="./EldenWiki.html">⟢ Dragonlord Placidusax </a>
-          </div>
-        </div>
+        <div
+          id="sideBar"
+          class="font-bold text-lg flex flex-col items-start pl-4 space-y-2"
+        ></div>
 
         <!-- Main Content -->
         <div id="WikiMain">
           <div class="text-yellow-700 font-bold text-lg">
             <div class="text-white font-bold text-2xl">
               <p class="pb-2">ELDEN WIKI</p>
+
               <div class="w-full">
                 <img src="../EldenPictures/line.png" alt="Line" />
+              </div>
+              <div class="flex flex-row items-start space-y-0 space-x-6 pt-4">
+                <p class="text-white text-lg max-w-lg">
+                  Willkommen im Elden Wiki! Hier findest du umfassende
+                  Informationen über die Welt von Elden Ring, einschließlich
+                  Charaktere, Bosse, Gegenstände und mehr.
+                  <br />
+                  <br />
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <img
+                  src="../EldenPictures/welcome.png"
+                  alt="welcome"
+                  class="rounded-lg max-w-lg shadow-lg"
+                />
               </div>
             </div>
           </div>
