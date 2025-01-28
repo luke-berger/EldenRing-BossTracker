@@ -131,7 +131,7 @@ function createCards(items: Item[]): void {
     const img2 = document.createElement("img");
     img2.src = "../EldenPictures/line2.png";
     img2.alt = `Bild von einer Linie`;
-    img2.classList.add("w-full", "object-cover", "rounded", "mb-4");
+    img2.classList.add("w-full", "object-cover", "rounded", "mb-2");
     card.appendChild(img2);
 
     const img = document.createElement("img");
