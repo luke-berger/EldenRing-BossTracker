@@ -7,14 +7,9 @@
       "region": "Mount Gelmir",
       "description": "Deadly mechanical constructs who wield massive blades.",
       "location": "Volcano Manor",
-      "drops": [
-        "10.000 Runes",
-        "Inquisitor's Girandole"
-      ],
+      "drops": ["10.000 Runes", "Inquisitor's Girandole"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69b4ba0al0i1uk6s98t1nbtxunt",
@@ -23,14 +18,9 @@
       "region": "Liurnia of the Lakes",
       "description": "Remarkably agile and aggressive warrior. Dangerous even for those with shield coverage...",
       "location": "Ringleader's Evergoal, Liurnia of the Lakes",
-      "drops": [
-        "8.000 Runes",
-        "Black Knife Tiche"
-      ],
+      "drops": ["8.000 Runes", "Black Knife Tiche"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69d0313fl0i1uk8pokynv71bkz8",
@@ -39,14 +29,9 @@
       "region": "Liurnia of the Lakes",
       "description": "Remarkably agile and aggressive warrior. Dangerous even for those with shield coverage...",
       "location": "Limgrave",
-      "drops": [
-        "80.000 Runes",
-        "Other Drops"
-      ],
+      "drops": ["80.000 Runes", "Other Drops"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69b85929l0i1ukc4l2up7yp9v0i",
@@ -55,14 +40,9 @@
       "region": "Liurnia of the Lakes",
       "description": "An Evergaol prisoner wielding a vicious sword and the void with murderous intent.",
       "location": "Royal Grave Evergaol, Liurnia of the Lakes",
-      "drops": [
-        "3.600 Runes",
-        "Meteorite"
-      ],
+      "drops": ["3.600 Runes", "Meteorite"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69a3ca37l0i1ukd1lq14ctafbk",
@@ -71,14 +51,9 @@
       "region": "Liurnia of the Lakes",
       "description": "An evergaol prisoner and former battle mage, Adan wields a spiked flail and uses stolen knowledge of fire magic to great effect.",
       "location": "Malefactor's Evergaol",
-      "drops": [
-        "3.800 Runes",
-        "Flame of the Fell God"
-      ],
+      "drops": ["3.800 Runes", "Flame of the Fell God"],
       "healthPoints": "2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69a63610l0i1ukyx7xgx6vf0zoa",
@@ -87,14 +62,9 @@
       "region": "Altus Plateau",
       "description": "Lansseax was the sister of Fortissax. It is said that she took the from of a human to commune with the knights as a priestess of the ancient dragon cult.",
       "location": "Altus Plateau",
-      "drops": [
-        "60.000 Runes",
-        "Lansseax's Glaive"
-      ],
+      "drops": ["60.000 Runes", "Lansseax's Glaive"],
       "healthPoints": "9087",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69590896l0i1ul0hnmor8iyf9xd",
@@ -103,14 +73,9 @@
       "region": "Limgrave",
       "description": "A glowing spirit that takes the form of a large deer, making it a menacing threat when charging at targets.",
       "location": "Siofra River",
-      "drops": [
-        "13.000 Runes",
-        "Ancestral Follower Ashes"
-      ],
+      "drops": ["13.000 Runes", "Ancestral Follower Ashes"],
       "healthPoints": "2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69878c4al0i1ul0i7dsfou8igrk",
@@ -130,9 +95,7 @@
         "Zamor Legwraps"
       ],
       "healthPoints": " 2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f697240ecl0i1ul21nevug9wq54e",
@@ -141,13 +104,9 @@
       "region": "Caelid",
       "description": "Temporarily overtaken by their bestial rage, the Beast Clergyman attacks ferociously, throwing rocks and themselves at their foes. Calm their aggression and return them to their senses.",
       "location": "Crumbling Farum Azula",
-      "drops": [
-        "N/A"
-      ],
+      "drops": ["N/A"],
       "healthPoints": "2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69bcfd7dl0i1ul502rklvi8tx62",
@@ -156,14 +115,9 @@
       "region": "Consecrated Snowfield",
       "description": "A hostile, massive Dragon-Fly creature. Menacing and extremely powerful.",
       "location": "Yelough Anix Tunnel in Consecrated Snowfield",
-      "drops": [
-        "120000 Runes",
-        "Meteorite of Astel"
-      ],
+      "drops": ["120000 Runes", "Meteorite of Astel"],
       "healthPoints": "25,376",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69d4387al0i1ulpqqumwqw05j3c",
@@ -172,14 +126,9 @@
       "region": "Limgrave",
       "description": "Underground-living creature found at Groveside Cave",
       "location": "Groveside Cave",
-      "drops": [
-        "1000 Runes",
-        "Flamedrake Talisman"
-      ],
+      "drops": ["1000 Runes", "Flamedrake Talisman"],
       "healthPoints": "1960",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69d7fe72l0i1ultk418yedh25s7",
@@ -195,9 +144,7 @@
         "Flamedrake Talisman +2"
       ],
       "healthPoints": "1,960",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69c4aacel0i1uluegh15idblimv",
@@ -206,14 +153,9 @@
       "region": "Dragonbarrow",
       "description": "Menacing and slow-paced, it wields a large, red-glowing sword and a shield combined with a full body armor and a chilling cape.",
       "location": "Warmaster's Shack, Northern Stormhill, Church of Vows, East Liurnia, Hermit Merchant's Shack, Leyndell Royal Captial, Dragonbarrow, North Caelid",
-      "drops": [
-        "2700 Runes",
-        "Bone Peddler's Bell Bearing"
-      ],
+      "drops": ["2700 Runes", "Bone Peddler's Bell Bearing"],
       "healthPoints": "6000 Runes, Meat Peddler's Bell Bearing",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69a61779l0i1ulv0a3ru8iy0zh5",
@@ -231,9 +173,7 @@
         "Gargoyle's Black Blades"
       ],
       "healthPoints": "12,500",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69bd3c06l0i1ulx2jxbiogta1i",
@@ -254,9 +194,7 @@
         "Black Knife"
       ],
       "healthPoints": "2750",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69637e92l0i1um8wqsflgk3i9yr",
@@ -265,14 +203,9 @@
       "region": "Limgrave",
       "description": "The merciless bloodhounds attack with grace and agility, never backing down or giving a moment's rest.",
       "location": "Limgrave, Forlon Hound Evergaol",
-      "drops": [
-        "1900 Runes",
-        "Bloodhound's Fang"
-      ],
+      "drops": ["1900 Runes", "Bloodhound's Fang"],
       "healthPoints": "14,792",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f697f48d5l0i1umdbu7v5phffgq",
@@ -281,14 +214,9 @@
       "region": "Limgrave",
       "description": "A large feline-hound looking guardian that serves as a \"Watchdog\"for the Burial Tree of the Stormfoot Catacombs.",
       "location": "Limgrave, Stormfoot Catacombs",
-      "drops": [
-        "800 Runes",
-        "Ash of War: Glintsword Arch"
-      ],
+      "drops": ["800 Runes", "Ash of War: Glintsword Arch"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69563d15l0i1umhb4am3xzuib3g",
@@ -303,9 +231,7 @@
         "Cleanrot Knight's Sword"
       ],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69d6ca41l0i1umlxg0j36mhrnzr",
@@ -314,14 +240,9 @@
       "region": "Mountaintops of the Giants",
       "description": "Frost Dragon guarding the frozen lake of Mountaintop of Giants, emits a permanent blizzard.",
       "location": "Mountaintops of the Giants",
-      "drops": [
-        "100,000 Runes",
-        "Dragon Heart"
-      ],
+      "drops": ["100,000 Runes", "Dragon Heart"],
       "healthPoints": "11,100",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f698b7d2fl0i1umtkf7cu5a21hdw",
@@ -330,14 +251,9 @@
       "region": "Mountaintop of the Giants",
       "description": "Commander Niall is a tall and built knight with a peg leg, clad in heavy armor, wielding a halberd that doubles as a battle standard. He is accompanied by two Spectral Banished Knights, one equipped with dual swords and the other equipped with a sword and shield.",
       "location": "Mountaintops of the Giants",
-      "drops": [
-        "90000 Runes",
-        "Veteran's Prosthesis"
-      ],
+      "drops": ["90000 Runes", "Veteran's Prosthesis"],
       "healthPoints": "16,000",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69562d87l0i1umxu2qwle86ai8q",
@@ -352,9 +268,7 @@
         "Unalloyed Gold Needle"
       ],
       "healthPoints": "11,400",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f699b0755l0i1un48m87fngquaw",
@@ -372,9 +286,7 @@
         "Crucible Greaves"
       ],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f695b37c1l0i1ungf7vjojqaf4zp",
@@ -394,9 +306,7 @@
         "Crystal Torrent"
       ],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69e151d8l0i1uo19hl8r6l0snmo",
@@ -412,9 +322,7 @@
         "Red-Feathered Branchsword"
       ],
       "healthPoints": "2750",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69bcc1cdl0i1uoai2hm5tcbuhh2",
@@ -423,14 +331,9 @@
       "region": "Caelid",
       "description": "A pale white dragon — its scales blighted by the same scarlet rot that plagues the region of Caelid. It silently waits along the southern highway, awaiting unsuspecting travelers to fall prey to its deathly onslaught.",
       "location": "Caelid",
-      "drops": [
-        "38,000 Runes",
-        "Dragon Heart"
-      ],
+      "drops": ["38,000 Runes", "Dragon Heart"],
       "healthPoints": "23,731",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f6961da46l0i1uoh7hemoben3dtg",
@@ -439,15 +342,9 @@
       "region": "Limgrave",
       "description": "The darkness of Coastal Cave hides a den of those who may look almost human, but are certainly not.",
       "location": "Coastal Cave",
-      "drops": [
-        "900 Runes",
-        "Tailoring Tools",
-        "Sewing Needle"
-      ],
+      "drops": ["900 Runes", "Tailoring Tools", "Sewing Needle"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69559137l0i1uoqf3qzndh0901t",
@@ -456,15 +353,9 @@
       "region": "Mount Gelmir",
       "description": "Sovereign Demi-Human creature roaming the lands of Mt. Gelmir",
       "location": "Mt. Gelmir",
-      "drops": [
-        "13000 Runes",
-        "Memory Stone",
-        "Golden Rune [1]"
-      ],
+      "drops": ["13000 Runes", "Memory Stone", "Golden Rune [1]"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69518792l0i1up7fr7vzvqcmzf",
@@ -473,13 +364,9 @@
       "region": "Altus Plateau",
       "description": "Enormously large and lethargic Golem that slowly storms into battle when it becomes aware of your presence.",
       "location": "Lyendell, Royal Capital",
-      "drops": [
-        "2992 Runes"
-      ],
+      "drops": ["2992 Runes"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69b39c43l0i1up7iq7q4lvvgyc",
@@ -488,14 +375,9 @@
       "region": "Mount Gelmir",
       "description": "Sovereign Demi-Human creature concealed within isolated caves.",
       "location": "Mt. Gelmir",
-      "drops": [
-        "11,000 Runes",
-        "Jar Cannon"
-      ],
+      "drops": ["11,000 Runes", "Jar Cannon"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69625d6el0i1upqw478c5kvsjv3",
@@ -504,16 +386,9 @@
       "region": "Altus Plateau",
       "description": "Massive knight clad in golden armor atop a giant horse.",
       "location": "Capital Outskirts Crumbling Farum Azula",
-      "drops": [
-        "50,000 Runes",
-        "Dragon Greatclaw",
-        "Dragonclaw Shield"
-      ],
+      "drops": ["50,000 Runes", "Dragon Greatclaw", "Dragonclaw Shield"],
       "healthPoints": "8,398",
-      "categories": [
-        "Alive",
-        "Progression"
-      ]
+      "categories": ["Alive", "Progression"]
     },
     {
       "id": "17f69de1071l0i1uprrms3umg3rug",
@@ -522,14 +397,9 @@
       "region": "Limgrave",
       "description": "A large, hostile humanoid creature awaken from its drowse straight into battle.",
       "location": "Siofra River, Lake of Rot",
-      "drops": [
-        "16000 Runes",
-        "Dragon Halberd"
-      ],
+      "drops": ["16000 Runes", "Dragon Halberd"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69b43b78l0i1upyrupf0wna8q7a",
@@ -546,9 +416,7 @@
         "Kindred of Rot Ashes"
       ],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69a6fae3l0i1uq63au7m71cs8mh",
@@ -564,9 +432,7 @@
         "Aspects of the Crucible: Horns"
       ],
       "healthPoints": "Stormhill Evergaol:, 2750",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f699200d2l0i1uqbs9w1ijmp2ner",
@@ -575,14 +441,9 @@
       "region": "Limgrave",
       "description": "Huge humanoid-like creature located at the underground caves of Uhl Palace Ruins",
       "location": "Ainsel River",
-      "drops": [
-        "12000 Runes",
-        "Frozen Lightning Spear"
-      ],
+      "drops": ["12000 Runes", "Frozen Lightning Spear"],
       "healthPoints": "≈4372",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69bf3366l0i1uqds10qc8exqn1ik",
@@ -591,15 +452,9 @@
       "region": "Mountaintops of the Giants",
       "description": "A massive in size, two-headed dragon capable of immense acts of annihilation.",
       "location": "Crumbling Farum Azula",
-      "drops": [
-        "280000 Runes",
-        "Remembrance of the Dragonlord"
-      ],
+      "drops": ["280000 Runes", "Remembrance of the Dragonlord"],
       "healthPoints": "≈26651",
-      "categories": [
-        "Alive",
-        "Major"
-      ]
+      "categories": ["Alive", "Major"]
     },
     {
       "id": "17f699dadfbl0i1uqmgi50oii11eaj",
@@ -608,16 +463,9 @@
       "region": "Altus Plateau",
       "description": "It is said that long ago, the Greater Will sent a golden star bearing a beast into the Lands Between, which would later become the Elden Ring.",
       "location": "Elden Throne",
-      "drops": [
-        "500000 Runes",
-        "Elden Remembrance"
-      ],
+      "drops": ["500000 Runes", "Elden Remembrance"],
       "healthPoints": "26,880 (GOD)",
-      "categories": [
-        "Alive",
-        "Progression",
-        "Major"
-      ]
+      "categories": ["Alive", "Progression", "Major"]
     },
     {
       "id": "17f695cb903l0i1uqqf40ik8th6wqw",
@@ -632,9 +480,7 @@
         "Briar Greatshield"
       ],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69579c3dl0i1uqxt6ul73e103ur",
@@ -643,14 +489,9 @@
       "region": "Altus Plateau",
       "description": "A highly aggressive humanoid priest",
       "location": "Leyndell, Royal Capital",
-      "drops": [
-        "30000 Runes",
-        "Lord of Blood's Exultation"
-      ],
+      "drops": ["30000 Runes", "Lord of Blood's Exultation"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f6969fb51l0i1ur3o74ppc7h3gl5",
@@ -678,9 +519,7 @@
         "Crimson Bubbletear"
       ],
       "healthPoints": "14,992",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69aae933l0i1urbz9zyz3jjvhjf",
@@ -697,9 +536,7 @@
         "Gravity Stone Chunk x 4"
       ],
       "healthPoints": "≈8000",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69c5a361l0i1urf5b4r5s5cf125",
@@ -708,14 +545,9 @@
       "region": "Altus Plateau",
       "description": "Two bulky ogre-like creatures fighting side by side with red-hot armament",
       "location": "Capital Outskirts",
-      "drops": [
-        "29,000 Runes",
-        "Omenkiller Rollo"
-      ],
+      "drops": ["29,000 Runes", "Omenkiller Rollo"],
       "healthPoints": "15,664",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f695d42c3l0i1uriibjok1ydfodg",
@@ -724,14 +556,9 @@
       "region": "Limgrave",
       "description": "Five invaders summoned in an endurance combat in three waves.",
       "location": "Deeproot Depths",
-      "drops": [
-        "40000 Runes",
-        "Fia's Mist"
-      ],
+      "drops": ["40000 Runes", "Fia's Mist"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69725115l0i1urx3t47u0gfs43",
@@ -740,14 +567,9 @@
       "region": "Limgrave",
       "description": "A feared-by-most massive dragon located within the Dragon-Burnt Ruins in Limgrave",
       "location": "Limgrave, Dragon-Burnt Ruins",
-      "drops": [
-        "5000 Runes",
-        "Dragon Heart"
-      ],
+      "drops": ["5000 Runes", "Dragon Heart"],
       "healthPoints": "≈3200 ",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69ba1aa7l0i1us08w3dodkoeju",
@@ -756,16 +578,9 @@
       "region": "Mountaintops of the Giants",
       "description": "Upon realizing the flames of their forge would never die, Queen Marika, marked him with a curse. \"O trifling giant, mayest thou tend thy, flame for eternity.",
       "location": "Mountaintops of the Giants",
-      "drops": [
-        "180,000 Runes",
-        "Remembrance of the Fire Giant"
-      ],
+      "drops": ["180,000 Runes", "Remembrance of the Fire Giant"],
       "healthPoints": "126,720",
-      "categories": [
-        "Alive",
-        "Progression",
-        "Major"
-      ]
+      "categories": ["Alive", "Progression", "Major"]
     },
     {
       "id": "17f69846e66l0i1us1stxjbqloi1z",
@@ -774,14 +589,9 @@
       "region": "Caelid",
       "description": "A large grey dragon, Flying Dragon Greyll patrols the bridge breathing fire and flying down on those trying to cross.",
       "location": "Caelid",
-      "drops": [
-        "80,000 Runes",
-        "Dragon Heart"
-      ],
+      "drops": ["80,000 Runes", "Dragon Heart"],
       "healthPoints": "11,628 Greater Foe",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f696b2a70l0i1us26mtvbp7p85",
@@ -790,14 +600,9 @@
       "region": "Caelid",
       "description": "A humanoid with heavy armor and a massive axe.",
       "location": "Gaol Cave",
-      "drops": [
-        "6700 Runes",
-        "Putrid Corpse Ashes"
-      ],
+      "drops": ["6700 Runes", "Putrid Corpse Ashes"],
       "healthPoints": "≈2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f6953dec4l0i1uso41jlanmo9c4v",
@@ -806,14 +611,9 @@
       "region": "Liurnia of the Lakes",
       "description": "A fearsome magic dragon with crystalized magic stone for scales. Jealously guards the entrance to the Academy's Crystal Cave.",
       "location": "Liurnia of the Lakes",
-      "drops": [
-        "14,699 Runes",
-        "Dragon Heart"
-      ],
+      "drops": ["14,699 Runes", "Dragon Heart"],
       "healthPoints": "6,100",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f695d390el0i1usszzihpctlfb2",
@@ -829,9 +629,7 @@
         "No Runes"
       ],
       "healthPoints": "≈11550",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69c4aefal0i1usvodp9osviy7v",
@@ -840,31 +638,9 @@
       "region": "Altus Plateau",
       "description": "A member of Godrick the Grafted's family imprisoned by the Dragon Knight during the War of the Shattering.",
       "location": "Golden Lineage Evergaol",
-      "drops": [
-        "26,000 Runes (NG)",
-        "Godfrey Icon"
-      ],
+      "drops": ["26,000 Runes (NG)", "Godfrey Icon"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
-    },
-    {
-      "id": "17f696099a7l0i1ut7jqzmbg7hm5tk",
-      "name": "Godfrey The Grafted",
-      "image": null,
-      "region": "Altus Plateau",
-      "description": "",
-      "location": "Golden Lineage Evergaol",
-      "drops": [
-        "26,000 Runes",
-        "Other Drops",
-        "Godfrey Icon"
-      ],
-      "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69a82a2el0i1uta5rxvqv53g7e",
@@ -873,15 +649,9 @@
       "region": "Altus Plateau",
       "description": "I've given thee courtesy enough. Now I fight as Hoarah Loux. Warrior!",
       "location": "Leyndell, Capital of Ash",
-      "drops": [
-        "300,000  Runes",
-        "Remembrance of Hoarah Loux"
-      ],
+      "drops": ["300,000  Runes", "Remembrance of Hoarah Loux"],
       "healthPoints": "≈2200",
-      "categories": [
-        "Alive",
-        "Progression"
-      ]
+      "categories": ["Alive", "Progression"]
     },
     {
       "id": "17f697d2396l0i1utcv9km3qxcnt6m",
@@ -890,15 +660,9 @@
       "region": "Altus Plateau",
       "description": "Physical form of Godfrey, First Elden Lord",
       "location": "Leyndell, Royal Capital",
-      "drops": [
-        "80,000 Runes",
-        "Talisman Pouch"
-      ],
+      "drops": ["80,000 Runes", "Talisman Pouch"],
       "healthPoints": "≈7099",
-      "categories": [
-        "Alive",
-        "Progression"
-      ]
+      "categories": ["Alive", "Progression"]
     },
     {
       "id": "17f6953f0d5l0i1uthl5j30bc50wdo",
@@ -907,13 +671,9 @@
       "region": "Limgrave",
       "description": "Godrick the Grafted is the ruler of Stormveil Castle, wielding a large golden axe. He has grafted many arms on his body, a symbol of power to all those who might try to depose him.",
       "location": "Stormveil Castle",
-      "drops": [
-        "Godrick's Great Rune, Remembrance of the Grafted"
-      ],
+      "drops": ["Godrick's Great Rune, Remembrance of the Grafted"],
       "healthPoints": "6080",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69c1bc31l0i1utrgxwhdp1csdis",
@@ -922,15 +682,9 @@
       "region": "Caelid",
       "description": "The apostles, one said to serve Destined Death, are wielders of the god-slaying black flame. But after their defeat by Maliketh, the Black Blade, the source of their power was sealed away.",
       "location": "Spiritcaller's Cave",
-      "drops": [
-        "70k Runes",
-        "Godskin Swaddling Cloth",
-        "Black Flame Ritual"
-      ],
+      "drops": ["70k Runes", "Godskin Swaddling Cloth", "Black Flame Ritual"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69c68871l0i1utx4r38kpdj1yil",
@@ -945,9 +699,7 @@
         "Black Flame Ritual x1"
       ],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69e15137l0i1uu7e0w9qynlhveh",
@@ -963,9 +715,7 @@
         "Death' Poker"
       ],
       "healthPoints": "≈2750",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69b45618l0i1uuc1z6qlw7hnnq",
@@ -988,9 +738,7 @@
         "Black Flame Ritual"
       ],
       "healthPoints": "≈10,000",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69814439l0i1uuifby3b0bn9gs",
@@ -1008,9 +756,7 @@
         "Noble Presence"
       ],
       "healthPoints": "≈10,000",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69bf253bl0i1uuma3733w2zwodm",
@@ -1031,9 +777,7 @@
         "Golden Beast Crest Shield"
       ],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f695140e9l0i1uuu2pjzqqsbskl",
@@ -1042,14 +786,9 @@
       "region": "Mountaintops of the Giants",
       "description": "A dragon wyrm with immense power.",
       "location": "North of Albinauric Rise in Mountaintops of the Giants",
-      "drops": [
-        "180,000 Runes",
-        "Dragon Heart x3"
-      ],
+      "drops": ["180,000 Runes", "Dragon Heart x3"],
       "healthPoints": "≈35,000",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f695022a1l0i1uv9aohy5ip9yh9f",
@@ -1058,14 +797,9 @@
       "region": "Altus Plateau",
       "description": "Chieftain of the Badland Warriors.",
       "location": "Leyndell, Ashen Capital.",
-      "drops": [
-        "300000 Runes",
-        "Remembrance of Hoarah Loux"
-      ],
+      "drops": ["300000 Runes", "Remembrance of Hoarah Loux"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69a5abc3l0i1uvfn18gmmqaf8jvj",
@@ -1074,14 +808,9 @@
       "region": "Mount Gelmir",
       "description": "Large, prawn-like creatures skilled at melee combat. Its Pest's Glaive poses a menace when wielded by these agile beings.",
       "location": "Mt. Gelmir",
-      "drops": [
-        "10000 Runes",
-        "Kindred of Rot's Exultation"
-      ],
+      "drops": ["10000 Runes", "Kindred of Rot's Exultation"],
       "healthPoints": "≈4000",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69cbe6cbl0i1uvgek1x2hoimz99",
@@ -1090,14 +819,9 @@
       "region": "Limgrave",
       "description": "The Guardian Golem, magical constructs that has been cut and chiseled from stone. It is the sole guardian of the Highroad Cave who holds a precious item.",
       "location": "Highroad Cave",
-      "drops": [
-        "1700 Runes",
-        "Blue Dancer Charm"
-      ],
+      "drops": ["1700 Runes", "Blue Dancer Charm"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f698b6791l0i1uvgjwlxwarfpe7a",
@@ -1112,10 +836,7 @@
         "Ash of War: Black Flame Tornado"
       ],
       "healthPoints": "≈24,000",
-      "categories": [
-        "Alive",
-        "Progression"
-      ]
+      "categories": ["Alive", "Progression"]
     },
     {
       "id": "17f69b5bcb4l0i1uvn888e99evsdgh",
@@ -1124,14 +845,9 @@
       "region": "Mount Gelmir",
       "description": "Large, prawn-like creatures skilled at melee combat. Its Pest's Glaive poses a menace when wielded by these agile beings.",
       "location": "Seethewater Cave",
-      "drops": [
-        "10000 Runes",
-        "Kindred of Rot's Exultation"
-      ],
+      "drops": ["10000 Runes", "Kindred of Rot's Exultation"],
       "healthPoints": "≈4000",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69644c82l0i1uw7sqlk2v4b6bfg",
@@ -1140,14 +856,9 @@
       "region": "Weeping Peninsula",
       "description": "Aggressive and feral, the Misbegotten sees nothing but rage",
       "location": "Castle Morne, Weeping Peninsula",
-      "drops": [
-        "3800 Runes",
-        "Grafted Blade Greatsword"
-      ],
+      "drops": ["3800 Runes", "Grafted Blade Greatsword"],
       "healthPoints": "14,272",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f699223e7l0i1uwcol7wflmcgajb",
@@ -1156,15 +867,9 @@
       "region": "Limgrave",
       "description": "Massive four winged black dragon with the ability to wield lightning.",
       "location": "Deeproot Depths",
-      "drops": [
-        "90000 Runes",
-        "Remembrance of the Lichdragon"
-      ],
+      "drops": ["90000 Runes", "Remembrance of the Lichdragon"],
       "healthPoints": "≈2200",
-      "categories": [
-        "Alive",
-        "Major"
-      ]
+      "categories": ["Alive", "Major"]
     },
     {
       "id": "17f69a078e0l0i1uwdp4xqjq6cpbxl",
@@ -1173,13 +878,9 @@
       "region": "Limgrave",
       "description": "A huge ogre-looking creature that has a large pumpkin helmet worn on its head. It wields a massive flail and seems to be guarding something or someone against intruders.",
       "location": "Waypoint Ruins, Limgrave, Caelem Ruins, Caelid",
-      "drops": [
-        "6300 Runes"
-      ],
+      "drops": ["6300 Runes"],
       "healthPoints": "≈10,500",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69bfa759l0i1uwfa0yrdvzcov1i",
@@ -1188,15 +889,9 @@
       "region": "Caelid",
       "description": "A large lesser dragon with bronze-colored scales covering its body. Magma Wyrms inhabit deep cave systems and volcanos, thriving within lava-flooded environments. ",
       "location": "Gael Tunnel",
-      "drops": [
-        "7500 Runes",
-        "Dragon Heart",
-        "Moonveil"
-      ],
+      "drops": ["7500 Runes", "Dragon Heart", "Moonveil"],
       "healthPoints": "7000",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f696318a4l0i1uwi4cr4u43opdj5",
@@ -1205,13 +900,9 @@
       "region": "Limgrave",
       "description": "The Lion Guardian of Stormveil has been coerced into service by cruel means",
       "location": "Stormveil Castle",
-      "drops": [
-        "2350"
-      ],
+      "drops": ["2350"],
       "healthPoints": "≈2350",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69a48308l0i1ux3rigvv37tx84f",
@@ -1226,9 +917,7 @@
         "480,000 Runes"
       ],
       "healthPoints": "≈26,128",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69dbf58cl0i1ux7vft8wsk6ejbb",
@@ -1243,9 +932,7 @@
         "Remembrance of the Black Blade"
       ],
       "healthPoints": "≈10620",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f699a40dfl0i1ux9v66kv7dyxcqx",
@@ -1261,9 +948,7 @@
         "Great Omenkiller Cleaver"
       ],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69e11c75l0i1uxa6gb2wpb12ipb",
@@ -1272,15 +957,9 @@
       "region": "Limgrave",
       "description": "An eccentric being capable of taking a comprehensive shape of its adversary, ranging from body features to armament.",
       "location": "Nokron, Eternal City",
-      "drops": [
-        "10000 Runes",
-        "Larval Tear x2",
-        "Silver Tear Mask"
-      ],
+      "drops": ["10000 Runes", "Larval Tear x2", "Silver Tear Mask"],
       "healthPoints": "≈19,536",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f698a5648l0i1uxs5sk4eq7dy3vh",
@@ -1289,14 +968,9 @@
       "region": "Mountaintops of the Giants",
       "description": "The Lord of Frenzied Flame.",
       "location": "Cave of the Forlorn in Mountaintops of the Giants",
-      "drops": [
-        "93000 Runes",
-        "Golden Order Greatsword"
-      ],
+      "drops": ["93000 Runes", "Golden Order Greatsword"],
       "healthPoints": "≈2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f697f4363l0i1uy2tk9e7g2jqcu",
@@ -1311,9 +985,7 @@
         "Remembrance of the Blood Lord"
       ],
       "healthPoints": "≈38,848",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69a3b2f2l0i1uy2usy0fea155ms",
@@ -1322,14 +994,9 @@
       "region": "Altus Plateau",
       "description": "The Lord of Frenzied Flame",
       "location": "Subterranean Shunning-Grounds",
-      "drops": [
-        "100,000 Runes",
-        "Bloodflame Talons"
-      ],
+      "drops": ["100,000 Runes", "Bloodflame Talons"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69d3101al0i1uyefex03ulrqazi",
@@ -1345,9 +1012,7 @@
         "Dragon Heart"
       ],
       "healthPoints": "≈2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69d237f0l0i1uytr06ed4gz92qdj",
@@ -1356,14 +1021,9 @@
       "region": "Altus Plateau",
       "description": "A humanoid necromancer draped in a red cloth. Efficient in the death sorceries.",
       "location": "Sage's Cave, Altus Plateau",
-      "drops": [
-        "0 Runes",
-        "Family Heads"
-      ],
+      "drops": ["0 Runes", "Family Heads"],
       "healthPoints": "Field Boss",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f6963b02cl0i1uyzthmeyyq45wna",
@@ -1372,14 +1032,9 @@
       "region": "Caelid",
       "description": "A duo of warriors comprised of the female Swordstress, who uses a sword with a whip-like function to attack at medium range and a male Priest who uses spells from afar.",
       "location": "Sellia, Town of Sorcery, Caelid",
-      "drops": [
-        "6,400 Runes",
-        "Nox Flowing Sword"
-      ],
+      "drops": ["6,400 Runes", "Nox Flowing Sword"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69a6c3fcl0i1uyzw7a7ssn0qlpp",
@@ -1407,9 +1062,7 @@
         "Night's Calvary Set"
       ],
       "healthPoints": "≈2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69a1be26l0i1uz1kl2dyuibof4d",
@@ -1426,9 +1079,7 @@
         "Great Omenkiller Cleaver"
       ],
       "healthPoints": "≈2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69a36cf8l0i1uz6gmzy0dr777k",
@@ -1437,14 +1088,9 @@
       "region": "Liurnia of the Lakes",
       "description": "The Onyx Lords, who had skin of stone, were called lords in reverential fear of their destructive power.",
       "location": "Sealed Tunnel, Royal Grave Evergaol",
-      "drops": [
-        "16000 Runes",
-        "Onyx Lord's Greatsword"
-      ],
+      "drops": ["16000 Runes", "Onyx Lord's Greatsword"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f699438b8l0i1uze1493a9h5ipk3",
@@ -1453,14 +1099,9 @@
       "region": "Mount Gelmir",
       "description": "A long range spellcaster complemented by an armored, short-distance warrior.",
       "location": "Unsightly Catacombs, Mt. Gelmir",
-      "drops": [
-        "9400 Runes",
-        "Other Drops"
-      ],
+      "drops": ["9400 Runes", "Other Drops"],
       "healthPoints": "≈1024",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f699ad704l0i1uzmqfup4jxyto7",
@@ -1475,9 +1116,7 @@
         "Rotten Gravekeeper Cloak"
       ],
       "healthPoints": "≈2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f697e343bl0i1uznxx67p026exqf",
@@ -1486,14 +1125,8 @@
       "region": "Weeping Peninsula",
       "description": "The breaking disrupted the flora and fauna of the region. Some took a rather intense liking to the larger plants that emerged",
       "location": "Castle Morne, Weeping Peninsula",
-      "drops": [
-        "291 Runes",
-        "Pumpkin Helm",
-        "Sanctuary Stone"
-      ],
-      "categories": [
-        "Alive"
-      ]
+      "drops": ["291 Runes", "Pumpkin Helm", "Sanctuary Stone"],
+      "categories": ["Alive"]
     },
     {
       "id": "17f69cfaee3l0i1uzongoyxg1dptid",
@@ -1508,9 +1141,7 @@
         "Golden Seed"
       ],
       "healthPoints": "≈18091",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69bc8bd6l0i1v03619u4s9j9ql",
@@ -1519,13 +1150,9 @@
       "region": "Altus Plateau",
       "description": "Lord Radagon was a great champion, possessed of flowing red locks. He came to these lands at the head of a great golden host, when he met Lady Rennala in battle. He soon repented his territorial transgressions though, and became husband to the Carian Queen. However. When Godfrey, first Elden Lord, was hounded from the Lands Between, Radagon left Rennala to return to the Erdtree Capital, becoming Queen Marika's second husband and King Consort. Taking the title... of second Elden Lord.",
       "location": "Elden Throne",
-      "drops": [
-        "N/A"
-      ],
+      "drops": ["N/A"],
       "healthPoints": "≈13339",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f6992c3e3l0i1v0af3d14p4dcgzx",
@@ -1534,14 +1161,9 @@
       "region": "Liurnia of the Lakes",
       "description": "Fierce guardian and protector of its master, even when it has long left.",
       "location": "Raya Lucaria Academy, Liurnia of the Lakes",
-      "drops": [
-        "14000 Runes",
-        "Memory Stone"
-      ],
+      "drops": ["14000 Runes", "Memory Stone"],
       "healthPoints": "≈2204",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69cf967fl0i1v0cmt73nix34p0c",
@@ -1550,14 +1172,9 @@
       "region": "Mount Gelmir",
       "description": "A ferocious red wolf with large fangs and blistering speed.",
       "location": "Gelmir Hero's Grave",
-      "drops": [
-        "21000 Runes",
-        "Bloodhound Knight Floh"
-      ],
+      "drops": ["21000 Runes", "Bloodhound Knight Floh"],
       "healthPoints": "≈3238",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69ae5092l0i1v0k714w3s2jz8tj",
@@ -1566,15 +1183,9 @@
       "region": "Limgrave",
       "description": "A spirit glowing in pale blue light, suspended in the air and taking the shape of a huge deer.",
       "location": "Nokron, Eternal City",
-      "drops": [
-        "24000 Runes",
-        "Remembrance of the Regal Ancestor"
-      ],
+      "drops": ["24000 Runes", "Remembrance of the Regal Ancestor"],
       "healthPoints": "≈6301",
-      "categories": [
-        "Alive",
-        "Major"
-      ]
+      "categories": ["Alive", "Major"]
     },
     {
       "id": "17f69b19e80l0i1v0x2eima4yhdbd",
@@ -1589,9 +1200,7 @@
         "Ash of War: Loretta's Slash"
       ],
       "healthPoints": "≈4214",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69de0562l0i1v105zzs817wea9m",
@@ -1600,13 +1209,9 @@
       "region": "Liurnia of the Lakes",
       "description": "An obscene and disturbing abomination, blend of a spider-like creature and human limbs resulting in a quite resourceful fighter at close range.",
       "location": "Kingsrealm Ruins, Liurnia of the Lakes",
-      "drops": [
-        "3,100 Runes"
-      ],
+      "drops": ["3,100 Runes"],
       "healthPoints": "≈2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f699179aal0i1v13n497m1yhps2s",
@@ -1615,14 +1220,9 @@
       "region": "Weeping Peninsula",
       "description": "Ferocious, robust creature that's huge in size and remarkably agressive.",
       "location": "Earthbore Cave, Weeping Peninsula",
-      "drops": [
-        "2600 Runes",
-        "Spelldrake Talisman"
-      ],
+      "drops": ["2600 Runes", "Spelldrake Talisman"],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f696d979al0i1v1775oof02bi8oh",
@@ -1637,9 +1237,7 @@
         "Remembrance of the Blasphemous"
       ],
       "healthPoints": "Phase1: 30,439/Phase2:1,000,000",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f698d3cc6l0i1v18wptud2du5ts",
@@ -1648,14 +1246,9 @@
       "region": "Weeping Peninsula",
       "description": "A troll like scavenger with an insatiable taste for blood.",
       "location": "Morne Tunnel",
-      "drops": [
-        "2000 Runes",
-        "Rusted Anchor"
-      ],
+      "drops": ["2000 Runes", "Rusted Anchor"],
       "healthPoints": "≈2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69ca8b2al0i1v1pg987jdl4cd68",
@@ -1673,9 +1266,7 @@
         "Scepter of the All-Knowing"
       ],
       "healthPoints": "≈6226",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f6982dbf7l0i1v1r3i4p5cy7kvcs",
@@ -1684,14 +1275,9 @@
       "region": "Limgrave",
       "description": "An esteemed high rank soldier, who wields a massive sword and wears his armor proudly.",
       "location": "Stranded Graveyard",
-      "drops": [
-        "400 Runes",
-        "2000 Runes (NG+1)"
-      ],
+      "drops": ["400 Runes", "2000 Runes (NG+1)"],
       "healthPoints": "≈10,464",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f6987c932l0i1v1t55h6j6fm1l83",
@@ -1708,9 +1294,7 @@
         "Ash of War: Black Flame Tornado"
       ],
       "healthPoints": "≈2200",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69dc74fdl0i1v1wz3qrzn19aps8",
@@ -1724,11 +1308,7 @@
         "Remembrance of the Starscourge, Radahn's Great Rune"
       ],
       "healthPoints": "≈25,856",
-      "categories": [
-        "Alive",
-        "Progression",
-        "Major"
-      ]
+      "categories": ["Alive", "Progression", "Major"]
     },
     {
       "id": "17f6968dcfal0i1v1y8dnaop27j5qg",
@@ -1748,9 +1328,7 @@
         "Tibia's Summons"
       ],
       "healthPoints": "≈2750",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f69621aadl0i1v2f5fkvee5z6719",
@@ -1759,15 +1337,9 @@
       "region": "Mount Gelmir",
       "description": "A corrupted and deformed tree that lurks in Mt. Gelmir.",
       "location": "Mt. Gelmir",
-      "drops": [
-        "18,000 Runes",
-        "Leaden Hardtear",
-        "Cerulean Hidden Tear"
-      ],
+      "drops": ["18,000 Runes", "Leaden Hardtear", "Cerulean Hidden Tear"],
       "healthPoints": "≈17,428",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f697500cal0i1v2hh14qewvbrwrn",
@@ -1783,9 +1355,7 @@
         "Gargoyle's Twinblade"
       ],
       "healthPoints": "≈9,120",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f696a35c3l0i1v2k2s30hlu2y50j",
@@ -1800,9 +1370,7 @@
         "Speckled Hardtear"
       ],
       "healthPoints": "???",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     },
     {
       "id": "17f6992d42bl0i1v2mmti9t0qkl5yj",
@@ -1819,9 +1387,7 @@
         "Hero's Rune [1]"
       ],
       "healthPoints": "≈1954",
-      "categories": [
-        "Alive"
-      ]
+      "categories": ["Alive"]
     }
   ]
 }
