@@ -1,4 +1,4 @@
-import { Item } from "./item";
+import { Item } from "./EldenItem";
 
 // Definition des Typs für die Filter-Funktion
 type filterFn = (inputArray: Item[], categoryArray: string[]) => Item[];
@@ -9,7 +9,7 @@ const filterByCategory: filterFn = (inputArray, categoryArray) => {
   if (categoryArray.length === 0) return inputArray; // Keine Filterkategorie, alle Items anzeigen
 
   return inputArray.filter((item) =>
-    item.categories.some((category) => categoryArray.includes(category))
+    item.categories.some((category: string) => categoryArray.includes(category))
   );
 };
 
@@ -102,10 +102,26 @@ function createCards(items: Item[]): void {
   // Neue Karten erstellen
   items.forEach((item) => {
     const card = document.createElement("div");
-    card.classList.add("card", "rounded-md", "p-4", "mb-4", "shadow-lg"); // Grundklassen
+
+    // Überprüfen, ob 'remembrance' in den Drops des Bosses vorhanden ist, um den goldenen Rand zu setzen
+    const isRemembranceBoss = item.drops.some((drop) =>
+      drop.toLowerCase().includes("remembrance")
+    );
+
+    card.classList.add(
+      "card",
+      "rounded-md",
+      "p-4",
+      "mb-4",
+      "shadow-lg",
+      "bg-black", // Hintergrund schwarz
+      "bg-opacity-50", // Leicht transparent
+      "relative", // Relativer Positionierungskontext für die Checkbox
+      isRemembranceBoss ? "border-gold" : "border-white" // Goldener Rand für Remembrance Bosse, sonst weiß
+    );
 
     const title = document.createElement("h2");
-    title.classList.add("text-2xl", "font-bold", "mb-2");
+    title.classList.add("text-2xl", "font-bold", "mb-2", "text-white"); // Weißer Text für den Titel
     title.textContent = item.name;
     card.appendChild(title);
 
@@ -116,36 +132,83 @@ function createCards(items: Item[]): void {
     card.appendChild(img);
 
     const description = document.createElement("p");
-    description.classList.add("mb-2");
-    description.innerHTML = `<span class="font-bold">Beschreibung:</span> ${item.description}`;
+    description.classList.add("mb-2", "text-white"); // Weißer Text für die Beschreibung
+    description.innerHTML = `<span class="font-bold">Description:</span> ${item.description}`;
     card.appendChild(description);
 
-    const date = document.createElement("p");
-    date.classList.add("mb-2");
-    date.innerHTML = `<span class="font-bold">Kaufdatum:</span> ${item.date}`;
-    card.appendChild(date);
+    const region = document.createElement("p");
+    region.classList.add("mb-2", "text-white"); // Weißer Text für Region
+    region.innerHTML = `<span class="font-bold">Region:</span> ${item.region}`;
+    card.appendChild(region);
 
-    const price = document.createElement("p");
-    price.classList.add("mb-2");
-    price.innerHTML = `<span class="font-bold">Preis:</span> ${item.price} €`;
-    card.appendChild(price);
+    const location = document.createElement("p");
+    location.classList.add("mb-2", "text-white"); // Weißer Text für Location
+    location.innerHTML = `<span class="font-bold">Location:</span> ${item.location}`;
+    card.appendChild(location);
 
-    const categories = document.createElement("p");
-    categories.classList.add("mb-4");
-    categories.innerHTML = `<span class="font-bold">Kategorien:</span> ${item.categories.join(", ")}`;
-    card.appendChild(categories);
+    const healthPoints = document.createElement("p");
+    healthPoints.classList.add("mb-2", "text-white"); // Weißer Text für Health Points
+    healthPoints.innerHTML = `<span class="font-bold">Health Points:</span> ${item.healthPoints} <img src="../EldenPictures/heart.webp" alt="Heart" class="inline-block ml-2 w-6 h-6">`;
+    card.appendChild(healthPoints);
+
+    // Runen suchen und darstellen
+    const runeDrop = item.drops.find((drop) =>
+      drop.toLowerCase().includes("runes")
+    );
+    const runes = document.createElement("p");
+    runes.classList.add("mb-4", "text-white"); // Weißer Text für Runen
+    if (runeDrop) {
+      runes.innerHTML = `<span class="font-bold">Runes:</span> ${runeDrop} <img src="../EldenPictures/runes.webp" alt="Rune" class="inline-block ml-2 w-6 h-6">`;
+      // Entfernen der Runen aus den Drops
+      item.drops = item.drops.filter(
+        (drop) => !drop.toLowerCase().includes("runes")
+      );
+    } else {
+      runes.innerHTML = `<span class="font-bold">Runes:</span> Keine Runen-Drops`;
+    }
+    card.appendChild(runes);
+
+    const drops = document.createElement("p");
+    drops.classList.add("mb-4", "text-white"); // Weißer Text für Drops
+    drops.innerHTML = `<span class="font-bold">Drops:</span> ${item.drops.join(", ")}`;
+    card.appendChild(drops);
 
     const button = document.createElement("button");
     button.classList.add(
-      "bg-red-500",
-      "text-white",
+      "bg-[#7c602a]",
+      "text-gray-100",
       "py-2",
       "px-4",
       "rounded",
       "hover:bg-red-700"
     );
-    button.textContent = "Mehr erfahren";
+    button.textContent = "Learn More";
     card.appendChild(button);
+
+    // Checkbox hinzufügen
+    const checkboxWrapper = document.createElement("div");
+    checkboxWrapper.classList.add(
+      "absolute",
+      "bottom-4",
+      "right-4",
+      "flex",
+      "items-center"
+    );
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.classList.add(
+      "w-5",
+      "h-5",
+      "border-2",
+      "border-white",
+      "rounded-md",
+      "focus:ring-2",
+      "focus:ring-white"
+    );
+
+    checkboxWrapper.appendChild(checkbox);
+    card.appendChild(checkboxWrapper);
 
     container.appendChild(card);
   });

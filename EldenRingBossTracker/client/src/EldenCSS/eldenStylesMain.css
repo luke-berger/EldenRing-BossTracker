@@ -163,14 +163,12 @@
   cursor: default;
 }
 
-.filterBox input:checked ~ .checkmark {
-  background-color: #7c602a;
-}
-
+/* Border for Remembrance Bosses */
 .border-gold {
   border: 2px solid #bd9341;
 }
 
+/* Border for Normal Bosses */
 .border-white {
   border: 2px solid rgb(54, 49, 25);
 }
