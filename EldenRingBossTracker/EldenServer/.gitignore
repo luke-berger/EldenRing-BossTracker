@@ -24,7 +24,7 @@ dist-ssr
 *.sw?
 
 # JSON-Server db
-
+db.json
 db copy.json
 db2.json
 
