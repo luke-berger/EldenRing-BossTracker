@@ -15,7 +15,6 @@ const filterByCategory: filterFn = (inputArray, categoryArray) => {
       )
   );
 };
-
 // Asynchrone Funktion fetchGet
 export async function fetchGet(): Promise<Item[]> {
   const baseUrl = "http://127.0.0.1:3002/items?"; // Dein API-Endpunkt
