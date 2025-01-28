@@ -5,11 +5,14 @@ type filterFn = (inputArray: Item[], categoryArray: string[]) => Item[];
 
 // Implementierung der Funktion
 const filterByCategory: filterFn = (inputArray, categoryArray) => {
-  // Rückgabe der Items, deren Kategorien mindestens eine Übereinstimmung haben
   if (categoryArray.length === 0) return inputArray; // Keine Filterkategorie, alle Items anzeigen
 
-  return inputArray.filter((item) =>
-    item.categories.some((category: string) => categoryArray.includes(category))
+  return inputArray.filter(
+    (item) =>
+      Array.isArray(item.categories) &&
+      item.categories.some((category: string) =>
+        categoryArray.includes(category)
+      )
   );
 };
 
@@ -121,14 +124,20 @@ function createCards(items: Item[]): void {
     );
 
     const title = document.createElement("h2");
-    title.classList.add("text-2xl", "font-bold", "mb-2", "text-white"); // Weißer Text für den Titel
+    title.classList.add("text-2xl", "font-bold", "text-white"); // Weißer Text für den Titel
     title.textContent = item.name;
     card.appendChild(title);
+
+    const img2 = document.createElement("img");
+    img2.src = "../EldenPictures/line2.png";
+    img2.alt = `Bild von einer Linie`;
+    img2.classList.add("w-full", "object-cover", "rounded", "mb-2");
+    card.appendChild(img2);
 
     const img = document.createElement("img");
     img.src = item.image || "https://via.placeholder.com/150";
     img.alt = `Bild von ${item.name}`;
-    img.classList.add("w-full", "h-40", "object-cover", "rounded", "mb-4");
+    img.classList.add("w-full", "h-80", "object-cover", "rounded", "mb-4");
     card.appendChild(img);
 
     const description = document.createElement("p");
@@ -158,7 +167,7 @@ function createCards(items: Item[]): void {
     const runes = document.createElement("p");
     runes.classList.add("mb-4", "text-white"); // Weißer Text für Runen
     if (runeDrop) {
-      runes.innerHTML = `<span class="font-bold">Runes:</span> ${runeDrop} <img src="../EldenPictures/runes.webp" alt="Rune" class="inline-block ml-2 w-6 h-6">`;
+      runes.innerHTML = `<span class="font-bold">Runes:</span> ${runeDrop} <img src="../EldenPictures/runes.webp" alt="Rune" class="inline-block ml-2 w-4 h-4">`;
       // Entfernen der Runen aus den Drops
       item.drops = item.drops.filter(
         (drop) => !drop.toLowerCase().includes("runes")
@@ -216,27 +225,29 @@ function createCards(items: Item[]): void {
 
 // Event-Listener nach DOM-Laden hinzufügen
 document.addEventListener("DOMContentLoaded", async () => {
-  const items = await fetchGet();
-  const categoryCheckboxes = document.querySelectorAll('input[name^="input"]');
+  const items = await fetchGet(); // Alle Items laden
+  console.log("Items geladen:", items); // Debugging
 
-  createCards(items);
+  const categoryCheckboxes = document.querySelectorAll<HTMLInputElement>(
+    'input[class^="filterBox"]'
+  );
 
+  createCards(items); // Initiale Kartenanzeige
+
+  // Event-Listener für Checkboxen
   categoryCheckboxes.forEach((checkbox) => {
-    checkbox.addEventListener("change", (event) => {
-      const target = event.target as HTMLInputElement;
+    checkbox.addEventListener("change", () => {
+      // Kategorien aktualisieren
+      selectedCategories = Array.from(categoryCheckboxes)
+        .filter((cb) => cb.checked) // Nur angekreuzte Checkboxen
+        .map((cb) => cb.value); // Werte der Checkboxen sammeln
 
-      if (target.checked) {
-        if (!selectedCategories.includes(target.value)) {
-          selectedCategories.push(target.value);
-        }
-      } else {
-        selectedCategories = selectedCategories.filter(
-          (category) => category !== target.value
-        );
-      }
+      console.log("Aktive Filterkategorien:", selectedCategories); // Debugging
 
       const filteredItems = filterByCategory(items, selectedCategories);
-      createCards(filteredItems);
+      console.log("Gefilterte Items:", filteredItems); // Debugging
+
+      createCards(filteredItems); // Karten neu rendern
     });
   });
 });

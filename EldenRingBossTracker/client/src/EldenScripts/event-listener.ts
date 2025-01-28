@@ -21,26 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Click-EventListener hinzufügen
   button.addEventListener("click", async () => {
-    // Werte der Eingabefelder trimmen und prüfen
-    const iptValue1 = inpElem1.value.trim();
-    const iptValue2 = inpElem2.value.trim();
-    const iptValue3 = inpElem3.value.trim();
-    const iptValue4 = inpElem4.value.trim();
-
-    const name = inpElem1.value.trim();
-    const description = inpElem2.value.trim();
-    const price = parseFloat(iptValue3); // Preis als Zahl konvertieren
-    const date = inpElem4.value.trim();
-
     // Kategorien: Alle angekreuzten Checkboxen in ein Array umwandeln
     const categoryCheckboxes = document.querySelectorAll(
-      'input[name^="input5"]:checked'
+      'input[class^="filterBox"]:checked'
     );
     const categories = Array.from(categoryCheckboxes).map(
       (checkbox) => (checkbox as HTMLInputElement).value
     );
-
-    const files = fileInput.files;
-    const file = files ? files[0] : null; // Wenn keine Datei ausgewählt wurde, wird null zugewiesen
   });
 });

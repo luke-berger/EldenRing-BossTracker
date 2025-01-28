@@ -1,5 +1,5 @@
 export type Item = {
-  categories: any;
+  categories: string[];
   id?: string; // Optional, falls vorhanden
   name: string; // Name des Bosses
   description: string; // Beschreibung des Bosses
