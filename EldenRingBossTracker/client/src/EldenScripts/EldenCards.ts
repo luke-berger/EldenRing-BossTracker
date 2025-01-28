@@ -124,14 +124,20 @@ function createCards(items: Item[]): void {
     );
 
     const title = document.createElement("h2");
-    title.classList.add("text-2xl", "font-bold", "mb-2", "text-white"); // Weißer Text für den Titel
+    title.classList.add("text-2xl", "font-bold", "text-white"); // Weißer Text für den Titel
     title.textContent = item.name;
     card.appendChild(title);
+
+    const img2 = document.createElement("img");
+    img2.src = "../EldenPictures/line2.png";
+    img2.alt = `Bild von einer Linie`;
+    img2.classList.add("w-full", "object-cover", "rounded", "mb-4");
+    card.appendChild(img2);
 
     const img = document.createElement("img");
     img.src = item.image || "https://via.placeholder.com/150";
     img.alt = `Bild von ${item.name}`;
-    img.classList.add("w-full", "h-40", "object-cover", "rounded", "mb-4");
+    img.classList.add("w-full", "h-80", "object-cover", "rounded", "mb-4");
     card.appendChild(img);
 
     const description = document.createElement("p");
@@ -161,7 +167,7 @@ function createCards(items: Item[]): void {
     const runes = document.createElement("p");
     runes.classList.add("mb-4", "text-white"); // Weißer Text für Runen
     if (runeDrop) {
-      runes.innerHTML = `<span class="font-bold">Runes:</span> ${runeDrop} <img src="../EldenPictures/runes.webp" alt="Rune" class="inline-block ml-2 w-6 h-6">`;
+      runes.innerHTML = `<span class="font-bold">Runes:</span> ${runeDrop} <img src="../EldenPictures/runes.webp" alt="Rune" class="inline-block ml-2 w-4 h-4">`;
       // Entfernen der Runen aus den Drops
       item.drops = item.drops.filter(
         (drop) => !drop.toLowerCase().includes("runes")
