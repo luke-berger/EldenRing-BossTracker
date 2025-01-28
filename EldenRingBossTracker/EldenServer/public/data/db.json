@@ -643,6 +643,17 @@
       "categories": ["Alive"]
     },
     {
+      "id": "17f696099a7l0i1ut7jqzmbg7hm5tk",
+      "name": "Godfrey The Grafted",
+      "image": null,
+      "region": "Altus Plateau",
+      "description": "",
+      "location": "Golden Lineage Evergaol",
+      "drops": ["26,000 Runes", "Other Drops", "Godfrey Icon"],
+      "healthPoints": "???",
+      "categories": ["Alive"]
+    },
+    {
       "id": "17f69a82a2el0i1uta5rxvqv53g7e",
       "name": "Godfrey, First Elden Lord (hoarah Loux)",
       "image": "https://eldenring.fanapis.com/images/bosses/17f69a82a2el0i1uta5rxvqv53g7e.png",
