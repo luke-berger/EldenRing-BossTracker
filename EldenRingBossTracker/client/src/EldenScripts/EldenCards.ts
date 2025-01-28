@@ -5,11 +5,14 @@ type filterFn = (inputArray: Item[], categoryArray: string[]) => Item[];
 
 // Implementierung der Funktion
 const filterByCategory: filterFn = (inputArray, categoryArray) => {
-  // Rückgabe der Items, deren Kategorien mindestens eine Übereinstimmung haben
   if (categoryArray.length === 0) return inputArray; // Keine Filterkategorie, alle Items anzeigen
 
-  return inputArray.filter((item) =>
-    item.categories.some((category: string) => categoryArray.includes(category))
+  return inputArray.filter(
+    (item) =>
+      Array.isArray(item.categories) &&
+      item.categories.some((category: string) =>
+        categoryArray.includes(category)
+      )
   );
 };
 
@@ -216,27 +219,29 @@ function createCards(items: Item[]): void {
 
 // Event-Listener nach DOM-Laden hinzufügen
 document.addEventListener("DOMContentLoaded", async () => {
-  const items = await fetchGet();
-  const categoryCheckboxes = document.querySelectorAll('input[name^="input"]');
+  const items = await fetchGet(); // Alle Items laden
+  console.log("Items geladen:", items); // Debugging
 
-  createCards(items);
+  const categoryCheckboxes = document.querySelectorAll<HTMLInputElement>(
+    'input[class^="filterBox"]'
+  );
 
+  createCards(items); // Initiale Kartenanzeige
+
+  // Event-Listener für Checkboxen
   categoryCheckboxes.forEach((checkbox) => {
-    checkbox.addEventListener("change", (event) => {
-      const target = event.target as HTMLInputElement;
+    checkbox.addEventListener("change", () => {
+      // Kategorien aktualisieren
+      selectedCategories = Array.from(categoryCheckboxes)
+        .filter((cb) => cb.checked) // Nur angekreuzte Checkboxen
+        .map((cb) => cb.value); // Werte der Checkboxen sammeln
 
-      if (target.checked) {
-        if (!selectedCategories.includes(target.value)) {
-          selectedCategories.push(target.value);
-        }
-      } else {
-        selectedCategories = selectedCategories.filter(
-          (category) => category !== target.value
-        );
-      }
+      console.log("Aktive Filterkategorien:", selectedCategories); // Debugging
 
       const filteredItems = filterByCategory(items, selectedCategories);
-      createCards(filteredItems);
+      console.log("Gefilterte Items:", filteredItems); // Debugging
+
+      createCards(filteredItems); // Karten neu rendern
     });
   });
 });

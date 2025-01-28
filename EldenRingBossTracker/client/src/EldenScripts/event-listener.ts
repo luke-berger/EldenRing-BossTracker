@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   button.addEventListener("click", async () => {
     // Kategorien: Alle angekreuzten Checkboxen in ein Array umwandeln
     const categoryCheckboxes = document.querySelectorAll(
-      'input[name^="input5"]:checked'
+      'input[class^="filterBox"]:checked'
     );
     const categories = Array.from(categoryCheckboxes).map(
       (checkbox) => (checkbox as HTMLInputElement).value
