@@ -3,7 +3,7 @@
     {
       "id": "17f695abef9l0i1ujzrup5y0z7rw6",
       "name": "Abductor Virgins",
-      "image": null,
+      "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/abductor-virgins-1-hq-elden-ring-wiki-guide.jpg",
       "region": "Mount Gelmir",
       "description": "Deadly mechanical constructs who wield massive blades.",
       "location": "Volcano Manor",
@@ -18,18 +18,7 @@
       "region": "Liurnia of the Lakes",
       "description": "Remarkably agile and aggressive warrior. Dangerous even for those with shield coverage...",
       "location": "Ringleader's Evergoal, Liurnia of the Lakes",
-      "drops": ["8.000 Runes", "Black Knife Tiche"],
-      "healthPoints": "???",
-      "categories": ["Alive"]
-    },
-    {
-      "id": "17f69d0313fl0i1uk8pokynv71bkz8",
-      "name": "Alecto Black Knife Ringleader",
-      "image": "https://eldenring.fanapis.com/images/bosses/17f69d0313fl0i1uk8pokynv71bkz8.png",
-      "region": "Liurnia of the Lakes",
-      "description": "Remarkably agile and aggressive warrior. Dangerous even for those with shield coverage...",
-      "location": "Limgrave",
-      "drops": ["80.000 Runes", "Other Drops"],
+      "drops": ["80.000 Runes", "Black Knife Tiche"],
       "healthPoints": "???",
       "categories": ["Alive"]
     },
@@ -117,18 +106,7 @@
       "location": "Yelough Anix Tunnel in Consecrated Snowfield",
       "drops": ["120000 Runes", "Meteorite of Astel"],
       "healthPoints": "25,376",
-      "categories": ["Alive"]
-    },
-    {
-      "id": "17f69d4387al0i1ulpqqumwqw05j3c",
-      "name": "Beast Of Farum Azula",
-      "image": "https://eldenring.fanapis.com/images/bosses/17f69d4387al0i1ulpqqumwqw05j3c.png",
-      "region": "Limgrave",
-      "description": "Underground-living creature found at Groveside Cave",
-      "location": "Groveside Cave",
-      "drops": ["1000 Runes", "Flamedrake Talisman"],
-      "healthPoints": "1960",
-      "categories": ["Alive"]
+      "categories": ["Alive", "Major"]
     },
     {
       "id": "17f69d7fe72l0i1ultk418yedh25s7",
@@ -257,8 +235,8 @@
     },
     {
       "id": "17f69562d87l0i1umxu2qwle86ai8q",
-      "name": "Commander O'neil",
-      "image": null,
+      "name": "Commander O'Neil",
+      "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/commander-o'neil-elden-ring-wiki.jpg",
       "region": "Caelid",
       "description": "A large and imposing human commander who wields a halberd that doubles as a battle standard, rousing his spirit minions to battle with unquenchable fervor.",
       "location": "Caelid",
@@ -337,7 +315,7 @@
     },
     {
       "id": "17f6961da46l0i1uoh7hemoben3dtg",
-      "name": "Demi-human Chief",
+      "name": "Demi-Human Chief",
       "image": "https://eldenring.fanapis.com/images/bosses/17f6961da46l0i1uoh7hemoben3dtg.png",
       "region": "Limgrave",
       "description": "The darkness of Coastal Cave hides a den of those who may look almost human, but are certainly not.",
@@ -348,7 +326,7 @@
     },
     {
       "id": "17f69559137l0i1uoqf3qzndh0901t",
-      "name": "Demi-human Queen Maggie",
+      "name": "Demi-Human Queen Maggie",
       "image": null,
       "region": "Mount Gelmir",
       "description": "Sovereign Demi-Human creature roaming the lands of Mt. Gelmir",
@@ -684,7 +662,7 @@
       "location": "Stormveil Castle",
       "drops": ["Godrick's Great Rune, Remembrance of the Grafted"],
       "healthPoints": "6080",
-      "categories": ["Alive"]
+      "categories": ["Alive", "Major", "Progression"]
     },
     {
       "id": "17f69c1bc31l0i1utrgxwhdp1csdis",
@@ -928,7 +906,7 @@
         "480,000 Runes"
       ],
       "healthPoints": "≈26,128",
-      "categories": ["Alive"]
+      "categories": ["Alive", "Major"]
     },
     {
       "id": "17f69dbf58cl0i1ux7vft8wsk6ejbb",
@@ -996,7 +974,7 @@
         "Remembrance of the Blood Lord"
       ],
       "healthPoints": "≈38,848",
-      "categories": ["Alive"]
+      "categories": ["Alive", "Major"]
     },
     {
       "id": "17f69a3b2f2l0i1uy2usy0fea155ms",
@@ -1007,7 +985,7 @@
       "location": "Subterranean Shunning-Grounds",
       "drops": ["100,000 Runes", "Bloodflame Talons"],
       "healthPoints": "???",
-      "categories": ["Alive"]
+      "categories": ["Alive", "Major"]
     },
     {
       "id": "17f69d3101al0i1uyefex03ulrqazi",
@@ -1163,7 +1141,7 @@
       "location": "Elden Throne",
       "drops": ["N/A"],
       "healthPoints": "≈13339",
-      "categories": ["Alive"]
+      "categories": ["Alive", "Major", "Progression"]
     },
     {
       "id": "17f6992c3e3l0i1v0af3d14p4dcgzx",
@@ -1174,7 +1152,7 @@
       "location": "Raya Lucaria Academy, Liurnia of the Lakes",
       "drops": ["14000 Runes", "Memory Stone"],
       "healthPoints": "≈2204",
-      "categories": ["Alive"]
+      "categories": ["Alive", "Progression"]
     },
     {
       "id": "17f69cf967fl0i1v0cmt73nix34p0c",
@@ -1248,7 +1226,7 @@
         "Remembrance of the Blasphemous"
       ],
       "healthPoints": "Phase1: 30,439/Phase2:1,000,000",
-      "categories": ["Alive"]
+      "categories": ["Alive", "Major"]
     },
     {
       "id": "17f698d3cc6l0i1v18wptud2du5ts",
@@ -1277,7 +1255,7 @@
         "Scepter of the All-Knowing"
       ],
       "healthPoints": "≈6226",
-      "categories": ["Alive"]
+      "categories": ["Alive", "Progression"]
     },
     {
       "id": "17f6982dbf7l0i1v1r3i4p5cy7kvcs",
