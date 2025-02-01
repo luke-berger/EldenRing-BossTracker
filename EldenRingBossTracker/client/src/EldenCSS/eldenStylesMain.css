@@ -63,6 +63,30 @@
   background-size: cover;
 }
 
+/* Hintergrund für die Maliketh-Seite */
+#maliketh-bg {
+  min-height: 100vh; /* Mindestens Viewport-Höhe */
+  height: auto; /* Passt sich dynamisch der Höhe des Inhalts an */
+  background: url(../EldenPictures/Maliketh.webp) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Hintergrund für die Astel-Seite */
+#astel-bg {
+  min-height: 100vh; /* Mindestens Viewport-Höhe */
+  height: auto; /* Passt sich dynamisch der Höhe des Inhalts an */
+  background: url(../EldenPictures/Astel.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Hintergrund für die Malenia-Seite */
+#malenia-bg {
+  min-height: 100vh; /* Mindestens Viewport-Höhe */
+  height: auto; /* Passt sich dynamisch der Höhe des Inhalts an */
+  background: url(../EldenPictures/Malenia.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
 /* Haupt-Grid */
 #CardsMainGrid {
   display: grid;
@@ -101,6 +125,10 @@
   padding: 20px; /* Innenabstand */
   color: #a88237;
   text-decoration: underline;
+}
+
+#quotes {
+  color: #a88237;
 }
 
 #WikiMain {

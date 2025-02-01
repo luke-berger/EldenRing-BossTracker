@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malenia, Blade of Miquella</title>
+
+    <!-- Tailwind CSS -->
+    <link href="../EldenCSS/tailwind.css" rel="stylesheet" />
+    <link href="../EldenCSS/eldenStylesMain.css" rel="stylesheet" />
+
+    <script type="module" src="./../EldenScripts/event-listener.ts"></script>
+    <script type="module" src="./../EldenScripts/EldenNames.ts"></script>
+
+    <!-- Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../EldenPictures/GoldenOrderIcon.png"
+    />
+  </head>
+  <body>
+    <!-- Hauptcontainer -->
+    <main id="malenia-bg" class="h-screen bg-cover bg-center text-white">
+      <!-- Grid-Layout -->
+      <main id="CardsWikiGrid" class="grid grid-rows-[auto_1fr] h-full">
+        <!-- Header -->
+        <div id="WikiHeader" class="bg-zinc-800">
+          <div id="headerImg1" class="w-7">
+            <a href="./EldenWiki.html">
+              <img src="../EldenPictures/Icons/MenuBars.png" alt="Menu-Bars" />
+            </a>
+          </div>
+
+          <div id="headerImg2" class="w-64">
+            <img src="../EldenPictures/Icons/search bar.png" alt="Search-Bar" />
+          </div>
+
+          <a href="../../index.html">
+            <button id="navButtons">Welcome</button>
+          </a>
+
+          <a href="../EldenSites/EldenCards.html">
+            <button id="navButtons">BossTracker</button>
+          </a>
+
+          <a href="../EldenSites/EldenWiki.html">
+            <button id="navButtonsPoint">EldenWiki</button>
+          </a>
+
+          <a href="./Developer.html">
+            <button id="navButtons">Developers</button>
+          </a>
+
+          <a href="./Imprint.html">
+            <button id="navButtons">Imprint</button>
+          </a>
+
+          <div class="flex items-center ml-auto gap-4">
+            <div id="headerImg3" class="w-7 ml-auto">
+              <a href="./EldenWiki.html">
+                <img
+                  src="../EldenPictures/Icons/optionDots.png"
+                  alt="Option Dots"
+                />
+              </a>
+            </div>
+
+            <div id="headerImg4" class="w-7 ml-auto">
+              <a href="./EldenWiki.html">
+                <img
+                  src="../EldenPictures/Icons/accountIcon.png"
+                  alt="Account-Icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="sideBar"
+          class="font-bold text-lg flex flex-col items-start pl-4 space-y-2"
+        ></div>
+
+        <!-- Main Content -->
+        <div id="WikiMain">
+          <div class="text-yellow-700 font-bold text-lg">
+            <div class="text-white font-bold text-2xl">
+              <p class="pb-2">MALENIA, BLADE OF MIQUELLA</p>
+
+              <div class="w-full">
+                <img src="../EldenPictures/line.png" alt="Line" />
+              </div>
+              <div class="flex flex-row items-start pt-4 justify-between">
+                <div
+                  class="text-white text-lg max-w-lg flex flex-col space-y-8"
+                >
+                  <p>
+                    Malenia, Blade of Miquella and Malenia, Goddess of Rot is a
+                    two-phase Demigod Boss in Elden Ring. She is the Empyrean
+                    twin sister of Miquella and gained renown for her legendary
+                    battle against Starscourge Radahn during the Shattering, in
+                    which she unleashed the power of the Scarlet Rot and reduced
+                    Caelid to ruins.
+                  </p>
+                  <p>
+                    This is an optional boss, as players do not need to defeat
+                    her in order to advance in Elden Ring.
+                  </p>
+                  <p id="quotes" class="italic">
+                    <span class="text-4xl">"</span>
+                    <span class="text-2xl"
+                      >...Heed my words. I am Malenia. Blade of Miquella. And I
+                      have never known defeat.</span
+                    >
+                    <span class="text-4xl">"</span>
+                  </p>
+                  <p class="text-lg pt-5 flex items-center">
+                    <img
+                      src="../EldenPictures/GoldenOrderIcon.png"
+                      alt="Icon"
+                      class="w-12 h-12 mr-2"
+                    />
+                    MALENIA, BLADE OF MIQUELLA COMBAT INFORMATION
+                  </p>
+                  <ul class="pl-12">
+                    <li>• Health: 33,251 HP</li>
+                    <li>• Defense: 123</li>
+                    <li>• Stance: 80</li>
+                    <li>• Parryable: Yes</li>
+                    <li>
+                      • Is vulnerable to a critical hit after being stance
+                      broken or parried
+                    </li>
+                    <li>• Damage: Standard, Slash, Pierce, Holy</li>
+                    <li>• Inflicts: Scarlet Rot</li>
+                    <li>
+                      • Drops 480,000 Runes, Malenia's Great Rune, Remembrance
+                      of the Rot Goddess
+                    </li>
+                  </ul>
+                </div>
+                <div class="self-start pr-5">
+                  <img
+                    src="../EldenPictures/MaleniaCard.png"
+                    alt="Maliketh Cards"
+                    class="rounded-lg max-w-lg shadow-lg"
+                  />
+                </div>
+              </div>
+              <div class="text-white text-lg flex-col space-y-6">
+                <p class="text-lg pt-9 flex items-center">
+                  <img
+                    src="../EldenPictures/GoldenOrderIcon.png"
+                    alt="Icon"
+                    class="w-12 h-12 mr-2"
+                  />
+                  MALENIA, BLADE OF MIQUELLA NOTES AND OTHER TRIVIA
+                </p>
+                <ul class="pl-12">
+                  <li>
+                    • "In the first year after launch, From Software reported
+                    that Malenia had killed players 329 million times" - How
+                    Many Times Players Attempted Malenia
+                  </li>
+                  <li>
+                    • In version 1.04 of Elden Ring, there was a bug related to
+                    the healing mechanic, which was present only when players
+                    fought Malenia in co-op - each attack would result in heal,
+                    even if the attack missed due to i-frames. This has since
+                    been fixed as of update 1.04.1
+                  </li>
+                  <li>
+                    • Melina's armor set can be found in the area directly
+                    before Malenia's boss room. This and the similarity of their
+                    names has led many fans to speculate that they are related
+                    in some way.
+                  </li>
+                  <li>
+                    • In the Elden Ring trailer shown at E3 2021, Malenia's
+                    arena is slightly different, with a much darker appearance
+                    and fewer roots in the background. However, the clip from
+                    her pre-battle cutscene has the final arena design.
+                  </li>
+                  <li>
+                    • The first phase can't be finished with a critical strike
+                    or damage caused by inflicting status effect - Malenia will
+                    remain with 1 HP left, even with poison or rot damage. In a
+                    very earlier version of the game, if the player managed to
+                    finish that phase with critical strike, 2nd phase Malenia
+                    would spawn with 1 HP.
+                  </li>
+                  <li>
+                    • After the player parries her three times and she enters
+                    the animation that allows for a critical hit, she can be
+                    staggered by any attack (including things like throwing
+                    knives), knocking her out of the critical animation.
+                  </li>
+                  <li>
+                    • Malenia is featured in the game's Collector's Edition,
+                    which includes a statue of her and a replica of her helmet.
+                  </li>
+                  <li>
+                    • Bug: If player depletes her poise while she performs
+                    attack with hyper-armor, she will not be put in a state that
+                    allows to perform a riposte.
+                  </li>
+                  <li>
+                    • Bug (possible only in co-op or with Spirit Ash): If player
+                    manage to end first phase with a riposte while Malenia's HP
+                    is 0, she will spawn with 1HP in 2nd phase.
+                  </li>
+                  <li class="pl-12">
+                    ∘ This can cause some odd situation in her attacks, as her
+                    first one will not be Scarlet Aeonia
+                  </li>
+                  <li>• Voice Actress: Pippa Bennett-Warner</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </main>
+  </body>
+</html>

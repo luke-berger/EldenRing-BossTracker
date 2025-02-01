@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astel, Stars Of Darkness</title>
+
+    <!-- Tailwind CSS -->
+    <link href="../EldenCSS/tailwind.css" rel="stylesheet" />
+    <link href="../EldenCSS/eldenStylesMain.css" rel="stylesheet" />
+
+    <script type="module" src="./../EldenScripts/event-listener.ts"></script>
+    <script type="module" src="./../EldenScripts/EldenNames.ts"></script>
+
+    <!-- Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../EldenPictures/GoldenOrderIcon.png"
+    />
+  </head>
+  <body>
+    <!-- Hauptcontainer -->
+    <main id="astel-bg" class="h-screen bg-cover bg-center text-white">
+      <!-- Grid-Layout -->
+      <main id="CardsWikiGrid" class="grid grid-rows-[auto_1fr] h-full">
+        <!-- Header -->
+        <div id="WikiHeader" class="bg-zinc-800">
+          <div id="headerImg1" class="w-7">
+            <a href="./EldenWiki.html">
+              <img src="../EldenPictures/Icons/MenuBars.png" alt="Menu-Bars" />
+            </a>
+          </div>
+
+          <div id="headerImg2" class="w-64">
+            <img src="../EldenPictures/Icons/search bar.png" alt="Search-Bar" />
+          </div>
+
+          <a href="../../index.html">
+            <button id="navButtons">Welcome</button>
+          </a>
+
+          <a href="../EldenSites/EldenCards.html">
+            <button id="navButtons">BossTracker</button>
+          </a>
+
+          <a href="../EldenSites/EldenWiki.html">
+            <button id="navButtonsPoint">EldenWiki</button>
+          </a>
+
+          <a href="./Developer.html">
+            <button id="navButtons">Developers</button>
+          </a>
+
+          <a href="./Imprint.html">
+            <button id="navButtons">Imprint</button>
+          </a>
+
+          <div class="flex items-center ml-auto gap-4">
+            <div id="headerImg3" class="w-7 ml-auto">
+              <a href="./EldenWiki.html">
+                <img
+                  src="../EldenPictures/Icons/optionDots.png"
+                  alt="Option Dots"
+                />
+              </a>
+            </div>
+
+            <div id="headerImg4" class="w-7 ml-auto">
+              <a href="./EldenWiki.html">
+                <img
+                  src="../EldenPictures/Icons/accountIcon.png"
+                  alt="Account-Icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="sideBar"
+          class="font-bold text-lg flex flex-col items-start pl-4 space-y-2"
+        ></div>
+
+        <!-- Main Content -->
+        <div id="WikiMain">
+          <div class="text-yellow-700 font-bold text-lg">
+            <div class="text-white font-bold text-2xl">
+              <p class="pb-2">ASTEL, STARS OF DARKNESS</p>
+
+              <div class="w-full">
+                <img src="../EldenPictures/line.png" alt="Line" />
+              </div>
+              <div class="flex flex-row items-start pt-4 justify-between">
+                <div
+                  class="text-white text-lg max-w-lg flex flex-col space-y-8"
+                >
+                  <p>
+                    Astel, Stars of Darkness is a Field Boss in Elden Ring. This
+                    giant insectoid creature is found in Yelough Anix Tunnel in
+                    the Consecrated Snowfield .
+                  </p>
+                  <p>
+                    This is an optional boss, as players don't need to defeat it
+                    in order to advance in Elden Ring. Astel, Naturalborn of the
+                    Void is the weaker variant of this boss.
+                  </p>
+                  <p class="text-lg pt-5 flex items-center">
+                    <img
+                      src="../EldenPictures/GoldenOrderIcon.png"
+                      alt="Icon"
+                      class="w-12 h-12 mr-2"
+                    />
+                    ASTEL, STARS OF DARKNESS COMBAT INFORMATION
+                  </p>
+                  <ul class="pl-12">
+                    <li>• Health: 18,617 HP</li>
+                    <li>• Defense: 120</li>
+                    <li>• Stance: 120</li>
+                    <li>• Parryable: No</li>
+                    <li>
+                      • Is vulnerable to a critical hit after being stance
+                      broken
+                    </li>
+                    <li>• Gravity type enemy</li>
+                    <li>• Weak Spot: Head</li>
+                    <li>• Damage: Standard, Magic</li>
+                    <li>• Drops 120,000 Runes, Meteorite of Astel</li>
+                  </ul>
+                </div>
+                <div class="self-start pr-5">
+                  <img
+                    src="../EldenPictures/AstelCard.webp"
+                    alt="Maliketh Cards"
+                    class="rounded-lg max-w-lg shadow-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </main>
+  </body>
+</html>

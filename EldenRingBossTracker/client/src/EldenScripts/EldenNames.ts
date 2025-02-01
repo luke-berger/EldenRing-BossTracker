@@ -15,7 +15,15 @@ function createWikiList(items: Item[]): void {
   // Namen hinzufügen
   items.forEach((item) => {
     const nameLink = document.createElement("a");
-    nameLink.href = `./EldenWiki.html`;
+    if (
+      item.name === "Maliketh, The Black Blade" ||
+      item.name === "Malenia, Blade of Miquella" ||
+      item.name === "Astel, Stars Of Darkness"
+    ) {
+      nameLink.href = `./${item.name}.html`;
+    } else {
+      nameLink.href = `./EldenWiki.html`;
+    }
     nameLink.textContent = `⟢ ${item.name}`;
 
     sideBar.appendChild(nameLink);

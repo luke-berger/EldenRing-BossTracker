@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maliketh, The Black Blade</title>
+
+    <!-- Tailwind CSS -->
+    <link href="../EldenCSS/tailwind.css" rel="stylesheet" />
+    <link href="../EldenCSS/eldenStylesMain.css" rel="stylesheet" />
+
+    <script type="module" src="./../EldenScripts/event-listener.ts"></script>
+    <script type="module" src="./../EldenScripts/EldenNames.ts"></script>
+
+    <!-- Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../EldenPictures/GoldenOrderIcon.png"
+    />
+  </head>
+  <body>
+    <!-- Hauptcontainer -->
+    <main id="maliketh-bg" class="h-screen bg-cover bg-center text-white">
+      <!-- Grid-Layout -->
+      <main id="CardsWikiGrid" class="grid grid-rows-[auto_1fr] h-full">
+        <!-- Header -->
+        <div id="WikiHeader" class="bg-zinc-800">
+          <div id="headerImg1" class="w-7">
+            <a href="./EldenWiki.html">
+              <img src="../EldenPictures/Icons/MenuBars.png" alt="Menu-Bars" />
+            </a>
+          </div>
+
+          <div id="headerImg2" class="w-64">
+            <img src="../EldenPictures/Icons/search bar.png" alt="Search-Bar" />
+          </div>
+
+          <a href="../../index.html">
+            <button id="navButtons">Welcome</button>
+          </a>
+
+          <a href="../EldenSites/EldenCards.html">
+            <button id="navButtons">BossTracker</button>
+          </a>
+
+          <a href="../EldenSites/EldenWiki.html">
+            <button id="navButtonsPoint">EldenWiki</button>
+          </a>
+
+          <a href="./Developer.html">
+            <button id="navButtons">Developers</button>
+          </a>
+
+          <a href="./Imprint.html">
+            <button id="navButtons">Imprint</button>
+          </a>
+
+          <div class="flex items-center ml-auto gap-4">
+            <div id="headerImg3" class="w-7 ml-auto">
+              <a href="./EldenWiki.html">
+                <img
+                  src="../EldenPictures/Icons/optionDots.png"
+                  alt="Option Dots"
+                />
+              </a>
+            </div>
+
+            <div id="headerImg4" class="w-7 ml-auto">
+              <a href="./EldenWiki.html">
+                <img
+                  src="../EldenPictures/Icons/accountIcon.png"
+                  alt="Account-Icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="sideBar"
+          class="font-bold text-lg flex flex-col items-start pl-4 space-y-2"
+        ></div>
+
+        <!-- Main Content -->
+        <div id="WikiMain">
+          <div class="text-yellow-700 font-bold text-lg">
+            <div class="text-white font-bold text-2xl">
+              <p class="pb-2">MALIKETH, THE BLACK BLADE</p>
+
+              <div class="w-full">
+                <img src="../EldenPictures/line.png" alt="Line" />
+              </div>
+              <div class="flex flex-row items-start pt-4 justify-between">
+                <div
+                  class="text-white text-lg max-w-lg flex flex-col space-y-8"
+                >
+                  <p>
+                    Maliketh, The Black Blade is a two-phase Legend Boss in
+                    Elden Ring. Gurranq, Beast Clergyman is found at the end of
+                    Crumbling Farum Azula and is revealed to be Maliketh, the
+                    Black Blade. Similar to how Blaidd is to Ranni, Maliketh is
+                    Queen Marika's shadow-bound beast. He was tasked to guard
+                    the Rune of Death, but his failure to do so led to the Night
+                    of the Black Knives. In order for this to never happen
+                    again, he imbued the rune into his very flesh.
+                  </p>
+                  <p>
+                    This is not an optional boss, as players must defeat it to
+                    advance to Leyndell, Ashen Capital and finish the game.
+                  </p>
+                  <p id="quotes" class="italic">
+                    <span class="text-4xl">"</span>
+                    <span class="text-2xl"
+                      >O, Death. Become my blade, once more.</span
+                    >
+                    <span class="text-4xl">"</span>
+                  </p>
+                  <p class="text-lg pt-5 flex items-center">
+                    <img
+                      src="../EldenPictures/GoldenOrderIcon.png"
+                      alt="Icon"
+                      class="w-12 h-12 mr-2"
+                    />
+                    MALIKETH, THE BLACK BLADE COMBAT INFORMATION
+                  </p>
+                  <ul class="pl-12">
+                    <li>• Health: 10,620 HP</li>
+                    <li>• Defense: 120</li>
+                    <li>• Stance: 80</li>
+                    <li>• Parryable: Yes</li>
+                    <li>
+                      • Is vulnerable to a critical hit after being stance
+                      broken
+                    </li>
+                    <li>
+                      • Damage: Standard, Slash, Pierce, Holy
+                    </li>
+                    <li>• Drops 220,000 Runes, Remembrance of the Black Blade</li>
+                  </ul>
+                </div>
+                <div class="self-start pr-5">
+                  <img
+                    src="../EldenPictures/MaliCARD.png"
+                    alt="Maliketh Cards"
+                    class="rounded-lg max-w-lg shadow-lg"
+                  />
+                </div>
+              </div>
+              <div class="text-white text-lg flex-col space-y-6">
+                <p class="text-lg pt-9 flex items-center">
+                  <img
+                    src="../EldenPictures/GoldenOrderIcon.png"
+                    alt="Icon"
+                    class="w-12 h-12 mr-2"
+                  />
+                  MALIKETH, THE BLACK BLADE NOTES AND OTHER TRIVIA
+                </p>
+                <ul class="pl-12">
+                  <li>
+                    • Defeating Maliketh will automatically cause world-altering
+                    changes to the game environment including:
+                  <li class="pl-12">
+                    ∘ The transformation of Leyndell into an ashen version. Several areas of Leyndell will become permanently inaccessible.
+                  </li>
+                  <li class="pl-12">
+                    ∘ Visible burning glowing red ember particles will cover the entire game world, and the Erdtree will become red with flame instead of the usual yellow.
+                  </li>
+                  </li>
+                  <li>• Voice Actor: Jonathan Keeble</li>
+                  <li>• Was originally called the Beast Pastor in the 1.00 version of the game.</li>
+                  <li>• Maliketh was the half-brother and sworn Shadow of Queen Marika, to whom she entrusted the Rune of Death. 
+                    Ranni the Witch stole a fragment of the Rune of Death to forge the daggers used during the Night of the Black Knives, 
+                    causing a series of events that resulted in the Shattering. After which, 
+                    she gave the Blasphemous Claw to her brother Rykard, to give him the power to challenge Maliketh.</li>
+                  <li>
+                    • In order to ensure that the Rune of Death was never stolen (again), Maliketh bound the blade that contained it to his own flesh.
+                  </li>
+                  <li>
+                    • Bug: If Tarnished dies during the second phase with the "debuff" on, they will not spawn with max HP. This applies to cooperators as well.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </main>
+  </body>
+</html>
