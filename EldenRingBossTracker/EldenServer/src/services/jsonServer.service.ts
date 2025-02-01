@@ -1,6 +1,6 @@
-import { Item } from '../models/item';
+import { Item } from "../models/item";
 
-export * as JsonService from './jsonServer.service';
+export * as JsonService from "./jsonServer.service";
 
 /**
  * Uses the Fetch API to get records from a specified URL.
@@ -11,8 +11,13 @@ export async function getAllItems(): Promise<Item[]> {
   const jsonPort: number = parseInt(process.env.JSON_PORT as string);
   const url: string = `http://${hostname}:${jsonPort}/items`;
 
-  /* ToDo */
-  return new Array<Item>();
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch items: ${response.statusText}`);
+  }
+
+  const items: Item[] = await response.json();
+  return items;
 }
 
 /**
@@ -26,5 +31,25 @@ export async function createItem(jsonPayload: string): Promise<string> {
   const url = `http://${hostname}:${jsonPort}/items`;
 
   /* ToDo */
-  return '';
+  return "";
+}
+
+export async function patchItem(itemPayload: Item): Promise<string> {
+  const hostname = process.env.HOSTNAME;
+  const jsonPort: number = parseInt(process.env.JSON_PORT as string);
+  const url = `http://${hostname}:${jsonPort}/items/${itemPayload.id}`;
+
+  const response = await fetch(url, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(itemPayload),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to create item: ${response.statusText}`);
+  }
+
+  return await response.text();
 }

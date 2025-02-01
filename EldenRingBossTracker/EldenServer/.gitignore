@@ -27,6 +27,7 @@ dist-ssr
 db.json
 db copy.json
 db2.json
+db3.json
 
 
 #.env

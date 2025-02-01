@@ -11,11 +11,13 @@
  * @property {string} image - The URL of the item's image.
  */
 export type Item = {
-  id: string;
-  name: string;
-  description: string;
-  price: number;
   categories: string[];
-  date: string;
-  image: string;
+  id: string; // Optional, falls vorhanden
+  name: string; // Name des Bosses
+  description: string; // Beschreibung des Bosses
+  image: string; // URL des Bildes des Bosses
+  region: string; // Region, in der der Boss erscheint
+  location: string; // Location des Bosses
+  healthPoints: string; // Lebenspunkte des Bosses
+  drops: string[]; // Liste der Drops des Bosses
 };

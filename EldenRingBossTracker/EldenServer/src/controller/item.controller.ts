@@ -1,7 +1,7 @@
-import { Request, Response } from 'express';
-import { Item } from '../models/item';
-import filterByCategory from '../services/item.service';
-import { JsonService } from '../services/jsonServer.service';
+import { Request, Response } from "express";
+import { Item } from "../models/item";
+import filterByCategory from "../services/item.service";
+import { JsonService } from "../services/jsonServer.service";
 
 /**
  * Controller class for handling item-related requests
@@ -12,24 +12,24 @@ export class ItemController {
    * @param request - The request object.
    * @param response - The response object.
    */
-  public async getItem(request: Request, response: Response) {
+  public async getItem(request: Request, response: Response): Promise<void> {
     try {
-      // GET request param called search
-      const param: string[] = request?.query?.search as string[];
+      // Extrahiere die Suchparameter (z. B. Kategorien)
+      const searchParams = request.query.search as string | undefined;
+      const categoryArray = searchParams ? searchParams.split(",") : [];
 
-      /* ToDo */
-      const responseData = new Array<Item>();
+      // Hole alle Items
+      const allItems: Item[] = await JsonService.getAllItems();
 
-      // Create response
-      response
-        // Assign the status to the response
-        .status(200)
-        // Assign the response body
-        .json(responseData);
+      // Filtere Items basierend auf Kategorien
+      const filteredItems: Item[] = filterByCategory(allItems, categoryArray);
+
+      console.log("Filter", filteredItems.length);
+      // Antwort senden
+      response.status(200).json(allItems);
     } catch (error) {
-      // Write logs to console and set response status to 500 for internal error
       console.error(error);
-      response.status(500);
+      response.status(500).send({ error: "Internal server error" });
     }
   }
 
@@ -44,7 +44,7 @@ export class ItemController {
       const requestData = request.body;
 
       /* ToDo */
-      const jsonServerResponse = '';
+      const jsonServerResponse = "";
 
       // Assign the status to the response
       response.status(201);
@@ -53,6 +53,22 @@ export class ItemController {
     } catch (error) {
       console.error(error);
       response.status(500);
+    }
+  }
+
+  public async patchItem(request: Request, response: Response): Promise<void> {
+    try {
+      // Hole die Request-Daten und validiere sie
+      const requestData: Item = request.body;
+
+      // Konvertiere das Item in einen JSON-String und sende es an den JSON-Server
+      const jsonServerResponse = await JsonService.patchItem(requestData);
+
+      // Erfolgsantwort senden
+      response.status(201).send(jsonServerResponse);
+    } catch (error) {
+      console.error(error);
+      response.status(500).send({ error: "Internal server error" });
     }
   }
 }

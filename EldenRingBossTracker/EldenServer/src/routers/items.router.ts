@@ -1,5 +1,5 @@
-import { Router } from 'express';
-import { ItemController } from '../controller/item.controller';
+import { Router } from "express";
+import { ItemController } from "../controller/item.controller";
 
 /**
  * Router for handling item-related requests
@@ -12,7 +12,9 @@ export const itemRouter = Router();
 export const itemController = new ItemController();
 
 // Create GET route for retrieving items based on the search query parameter
-itemRouter.get('/', itemController.getItem);
+itemRouter.get("/", itemController.getItem);
 
 // Create POST route to create a new item
-itemRouter.post('/', itemController.createItem);
+itemRouter.post("/", itemController.createItem);
+
+itemRouter.patch("/", itemController.patchItem);

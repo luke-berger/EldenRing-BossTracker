@@ -19,7 +19,7 @@ const filterByCategory: filterFn = (inputArray, categoryArray) => {
 export async function fetchGet(): Promise<Item[]> {
   const baseUrl = "http://127.0.0.1:3002/items?"; // Dein API-Endpunkt
   const searchParams = new URLSearchParams();
-
+  console.log(selectedCategories);
   // Wenn Kategorien ausgewählt sind, werden diese als URL-Parameter hinzugefügt
   if (selectedCategories.length > 0) {
     selectedCategories.forEach((category) =>
@@ -55,7 +55,7 @@ export async function fetchGet(): Promise<Item[]> {
 }
 
 export async function fetchPost(newItem: Item): Promise<void> {
-  const baseUrl = "http://127.0.0.1:3001/api/items"; // Dein API-Endpunkt
+  const baseUrl = "http://127.0.0.1:3001/items"; // Dein API-Endpunkt
   const url = `${baseUrl}`;
 
   try {
@@ -86,6 +86,37 @@ export async function fetchPost(newItem: Item): Promise<void> {
   }
 }
 
+// Funktion zum Updaten des Boss-Status mit PATCH
+async function updateBossStatus(
+  bossId: string,
+  categories: string[]
+): Promise<void> {
+  const baseUrl = `http://127.0.0.1:3001/items`;
+
+  try {
+    const response = await fetch(baseUrl, {
+      method: "PATCH", // PATCH
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id: bossId,
+        categories,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Server returned status: ${response.status}`);
+    }
+
+    // console.log(
+    //   `Boss ${bossId} wurde ${isChecked ? "getötet" : "wiederbelebt"}.`
+    // );
+  } catch (error) {
+    console.error("Fehler beim Aktualisieren des Boss-Status:", error);
+  }
+}
+
 // Initialisierung der ausgewählten Kategorien
 let selectedCategories: string[] = [];
 
@@ -104,6 +135,9 @@ function createCards(items: Item[]): void {
   // Neue Karten erstellen
   items.forEach((item) => {
     const card = document.createElement("div");
+    card.setAttribute("data-boss-id", item.id);
+
+    const isKilled = item.categories.includes("Killed");
 
     // Überprüfen, ob 'remembrance' in den Drops des Bosses vorhanden ist, um den goldenen Rand zu setzen
     const isRemembranceBoss = item.drops.some((drop) =>
@@ -136,7 +170,7 @@ function createCards(items: Item[]): void {
     const img = document.createElement("img");
     img.src = item.image || "https://via.placeholder.com/150";
     img.alt = `Bild von ${item.name}`;
-    img.classList.add("w-full", "h-80", "object-cover", "rounded", "mb-4");
+    img.classList.add("w-full", "h-96", "object-cover", "rounded", "mb-4");
     card.appendChild(img);
 
     const description = document.createElement("p");
@@ -214,6 +248,14 @@ function createCards(items: Item[]): void {
       "focus:ring-2",
       "focus:ring-white"
     );
+    checkbox.setAttribute("data-boss-id", item.id);
+
+    checkbox.checked = isKilled;
+    item.categories[0] = isKilled ? "Killed" : "Alive";
+
+    checkbox.addEventListener("change", async () => {
+      await updateBossStatus(item.id, item.categories);
+    });
 
     checkboxWrapper.appendChild(checkbox);
     card.appendChild(checkboxWrapper);

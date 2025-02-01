@@ -5,7 +5,7 @@
  * @param categoryArray - The array of categories to filter by.
  * @returns Item[] that match at least one of the specified categories.
  */
-import { Item } from '../models/item';
+import { Item } from "../models/item";
 
 type filterFn = (inputArray: Item[], categoryArray: string[]) => Item[];
 
@@ -13,8 +13,9 @@ type filterFn = (inputArray: Item[], categoryArray: string[]) => Item[];
  * Filters given inputArray by given categoryArray
  */
 const filterByCategory: filterFn = (inputArray, categoryArray) => {
-  /* ToDo */
-  return new Array<Item>();
+  return inputArray.filter((item) =>
+    item.categories.some((category) => categoryArray.includes(category))
+  );
 };
 
 export default filterByCategory;

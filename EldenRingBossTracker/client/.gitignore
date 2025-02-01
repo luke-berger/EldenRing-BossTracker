@@ -187,3 +187,8 @@ Temporary Items
 .nfs*
 # VS Code
 *.vscode
+
+db.json
+db copy.json
+db2.json
+db3.json
