@@ -235,8 +235,8 @@
     },
     {
       "id": "17f69562d87l0i1umxu2qwle86ai8q",
-      "name": "Commander O'Neil",
-      "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/commander-o'neil-elden-ring-wiki.jpg",
+      "name": "Commander O'neil",
+      "image": null,
       "region": "Caelid",
       "description": "A large and imposing human commander who wields a halberd that doubles as a battle standard, rousing his spirit minions to battle with unquenchable fervor.",
       "location": "Caelid",
@@ -315,8 +315,8 @@
     },
     {
       "id": "17f6961da46l0i1uoh7hemoben3dtg",
-      "name": "Demi-Human Chief",
-      "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lesser-demi-human-chief-1-hq-elden-ring-wiki-guide.jpg",
+      "name": "Demi-human Chief",
+      "image": "https://eldenring.fanapis.com/images/bosses/17f6961da46l0i1uoh7hemoben3dtg.png",
       "region": "Limgrave",
       "description": "The darkness of Coastal Cave hides a den of those who may look almost human, but are certainly not.",
       "location": "Coastal Cave",
@@ -326,8 +326,8 @@
     },
     {
       "id": "17f69559137l0i1uoqf3qzndh0901t",
-      "name": "Demi-Human Queen Maggie",
-      "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human-queen-maggie-1-hq-elden-ring-wiki-guide.jpg",
+      "name": "Demi-human Queen Maggie",
+      "image": null,
       "region": "Mount Gelmir",
       "description": "Sovereign Demi-Human creature roaming the lands of Mt. Gelmir",
       "location": "Mt. Gelmir",
