@@ -20,4 +20,5 @@ export type Item = {
   location: string; // Location des Bosses
   healthPoints: string; // Lebenspunkte des Bosses
   drops: string[]; // Liste der Drops des Bosses
+  runes: string[];
 };

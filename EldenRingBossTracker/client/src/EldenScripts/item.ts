@@ -6,6 +6,7 @@ export type Item = {
   date: string;
   categories: string[];
   image: string;
+  runes: string[];
 };
 
 /*

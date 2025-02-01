@@ -17,16 +17,20 @@ export class ItemController {
       // Extrahiere die Suchparameter (z. B. Kategorien)
       const searchParams = request.query.search as string | undefined;
       const categoryArray = searchParams ? searchParams.split(",") : [];
+      console.log("Cat; ", categoryArray);
 
       // Hole alle Items
       const allItems: Item[] = await JsonService.getAllItems();
 
       // Filtere Items basierend auf Kategorien
-      const filteredItems: Item[] = filterByCategory(allItems, categoryArray);
+      const filteredItems: Item[] =
+        categoryArray.length > 0
+          ? filterByCategory(allItems, categoryArray)
+          : allItems;
 
       console.log("Filter", filteredItems.length);
       // Antwort senden
-      response.status(200).json(allItems);
+      response.status(200).json(filteredItems);
     } catch (error) {
       console.error(error);
       response.status(500).send({ error: "Internal server error" });

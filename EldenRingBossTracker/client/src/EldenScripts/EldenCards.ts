@@ -17,7 +17,7 @@ const filterByCategory: filterFn = (inputArray, categoryArray) => {
 };
 // Asynchrone Funktion fetchGet
 export async function fetchGet(): Promise<Item[]> {
-  const baseUrl = "http://127.0.0.1:3002/items?"; // Dein API-Endpunkt
+  const baseUrl = "http://127.0.0.1:3001/api/items?"; // Dein API-Endpunkt
   const searchParams = new URLSearchParams();
   console.log(selectedCategories);
   // Wenn Kategorien ausgewählt sind, werden diese als URL-Parameter hinzugefügt
@@ -55,7 +55,7 @@ export async function fetchGet(): Promise<Item[]> {
 }
 
 export async function fetchPost(newItem: Item): Promise<void> {
-  const baseUrl = "http://127.0.0.1:3001/items"; // Dein API-Endpunkt
+  const baseUrl = "http://127.0.0.1:3001/api/items"; // Dein API-Endpunkt
   const url = `${baseUrl}`;
 
   try {
@@ -91,7 +91,7 @@ async function updateBossStatus(
   bossId: string,
   categories: string[]
 ): Promise<void> {
-  const baseUrl = `http://127.0.0.1:3001/items`;
+  const baseUrl = `http://127.0.0.1:3001/api/items`;
 
   try {
     const response = await fetch(baseUrl, {
@@ -193,21 +193,9 @@ function createCards(items: Item[]): void {
       healthPoints.innerHTML = `<span class="font-bold">Health Points:</span> ${item.healthPoints} <img src="../EldenPictures/heart.webp" alt="Heart" class="inline-block ml-2 w-6 h-6">`;
       card.appendChild(healthPoints);
 
-      // Runen suchen und darstellen
-      const runeDrop = item.drops.find((drop) =>
-        drop.toLowerCase().includes("runes")
-      );
       const runes = document.createElement("p");
-      runes.classList.add("mb-4", "text-white"); // Weißer Text für Runen
-      if (runeDrop) {
-        runes.innerHTML = `<span class="font-bold">Runes:</span> ${runeDrop} <img src="../EldenPictures/runes.webp" alt="Rune" class="inline-block ml-2 w-4 h-4">`;
-        // Entfernen der Runen aus den Drops
-        item.drops = item.drops.filter(
-          (drop) => !drop.toLowerCase().includes("runes")
-        );
-      } else {
-        runes.innerHTML = `<span class="font-bold">Runes:</span> Keine Runen-Drops`;
-      }
+      runes.classList.add("mb-2", "text-white"); // Weißer Text für Health Points
+      runes.innerHTML = `<span class="font-bold">Runes:</span> ${item.runes} <img src="../EldenPictures/runes.webp" alt="Heart" class="inline-block ml-2 w-6 h-6">`;
       card.appendChild(runes);
 
       const drops = document.createElement("p");
@@ -332,21 +320,9 @@ function createCards(items: Item[]): void {
       healthPoints.innerHTML = `<span class="font-bold">Health Points:</span> ${item.healthPoints} <img src="../EldenPictures/heart.webp" alt="Heart" class="inline-block ml-2 w-6 h-6 filter brightness-50">`;
       card.appendChild(healthPoints);
 
-      // Runen suchen und darstellen
-      const runeDrop = item.drops.find((drop) =>
-        drop.toLowerCase().includes("runes")
-      );
       const runes = document.createElement("p");
-      runes.classList.add("mb-4", "text-gray-700"); // Weißer Text für Runen
-      if (runeDrop) {
-        runes.innerHTML = `<span class="font-bold">Runes:</span> ${runeDrop} <img src="../EldenPictures/runes.webp" alt="Rune" class="inline-block ml-2 w-4 h-4 filter brightness-50">`;
-        // Entfernen der Runen aus den Drops
-        item.drops = item.drops.filter(
-          (drop) => !drop.toLowerCase().includes("runes")
-        );
-      } else {
-        runes.innerHTML = `<span class="font-bold">Runes:</span> Keine Runen-Drops`;
-      }
+      runes.classList.add("mb-2", "text-gray-700"); // Weißer Text für Health Points
+      runes.innerHTML = `<span class="font-bold">Runes:</span> ${item.runes} <img src="../EldenPictures/runes.webp" alt="Heart" class="inline-block ml-2 w-6 h-6 filter brightness-50">`;
       card.appendChild(runes);
 
       const drops = document.createElement("p");
@@ -420,20 +396,18 @@ function createCards(items: Item[]): void {
 
       container.appendChild(card);
     }
-    console.log(`Boss: ${item.name}, isKilled: ${isKilled}`);
   });
 }
 
 // Event-Listener nach DOM-Laden hinzufügen
 document.addEventListener("DOMContentLoaded", async () => {
   const items = await fetchGet(); // Alle Items laden
-  console.log("Items geladen:", items); // Debugging
-
   const categoryCheckboxes = document.querySelectorAll<HTMLInputElement>(
     'input[class^="filterBox"]'
   );
 
   createCards(items); // Initiale Kartenanzeige
+  console.log("Items: ", items);
 
   // Event-Listener für Checkboxen
   categoryCheckboxes.forEach((checkbox) => {
@@ -449,6 +423,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       console.log("Gefilterte Items:", filteredItems); // Debugging
 
       createCards(filteredItems); // Karten neu rendern
+      console.log("filteredItems: ", filteredItems);
     });
   });
 });
