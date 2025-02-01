@@ -9,7 +9,7 @@
       "location": "Volcano Manor",
       "drops": ["10.000 Runes", "Inquisitor's Girandole"],
       "healthPoints": "3,811",
-      "categories": ["Alive"]
+      "categories": ["Killed"]
     },
     {
       "id": "17f69b4ba0al0i1uk6s98t1nbtxunt",
@@ -84,18 +84,7 @@
         "Zamor Legwraps"
       ],
       "healthPoints": "2,570 - 6,868",
-      "categories": ["Alive"]
-    },
-    {
-      "id": "17f697240ecl0i1ul21nevug9wq54e",
-      "name": "Beast Clergyman",
-      "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/beast-clergyman-4k.jpg",
-      "region": "Caelid",
-      "description": "Temporarily overtaken by their bestial rage, the Beast Clergyman attacks ferociously, throwing rocks and themselves at their foes. Calm their aggression and return them to their senses.",
-      "location": "Crumbling Farum Azula",
-      "drops": ["N/A"],
-      "healthPoints": "10,620",
-      "categories": ["Alive"]
+      "categories": ["Killed"]
     },
     {
       "id": "17f69bcfd7dl0i1ul502rklvi8tx62",
@@ -151,7 +140,7 @@
         "Gargoyle's Black Blades"
       ],
       "healthPoints": "8,452 - 12,297",
-      "categories": ["Alive"]
+      "categories": ["Killed"]
     },
     {
       "id": "17f69bd3c06l0i1ulx2jxbiogta1i",
@@ -355,7 +344,7 @@
       "location": "Capital Outskirts Crumbling Farum Azula",
       "drops": ["50,000 Runes", "Dragon Greatclaw", "Dragonclaw Shield"],
       "healthPoints": "13,362",
-      "categories": ["Alive", "Progression"]
+      "categories": ["Killed", "Progression"]
     },
     {
       "id": "17f69de1071l0i1uprrms3umg3rug",
@@ -904,7 +893,7 @@
         "Viridian Amber Medallion +1"
       ],
       "healthPoints": "4,174 - 8,193",
-      "categories": ["Alive", "Major"]
+      "categories": ["Killed", "Major"]
     },
     {
       "id": "17f699a40dfl0i1ux9v66kv7dyxcqx",
@@ -1214,7 +1203,7 @@
         "Remembrance of the Blasphemous"
       ],
       "healthPoints": "Phase 1: 30,439/Phase 2: 89,613",
-      "categories": ["Alive", "Major"]
+      "categories": ["Killed", "Major"]
     },
     {
       "id": "17f698d3cc6l0i1v18wptud2du5ts",
@@ -1254,7 +1243,7 @@
       "location": "Stranded Graveyard",
       "drops": ["400 Runes", "2000 Runes (NG+1)"],
       "healthPoints": "384",
-      "categories": ["Alive"]
+      "categories": ["Killed"]
     },
     {
       "id": "17f6987c932l0i1v1t55h6j6fm1l83",
@@ -1364,7 +1353,7 @@
         "Hero's Rune [1]"
       ],
       "healthPoints": "2,889 - 6,461",
-      "categories": ["Alive"]
+      "categories": ["Killed"]
     }
   ]
 }
