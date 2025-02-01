@@ -198,8 +198,12 @@
 }
 
 /* Border for Normal Bosses */
-.border-white {
+.border-cards {
   border: 2px solid rgb(54, 49, 25);
+}
+
+.border-white {
+  border: 2px solid #ffffffa7;
 }
 
 /* Allgemeine Checkbox-Stile */
@@ -244,4 +248,24 @@
 /* Optional: Optionales Erscheinungsbild bei Hover für den Haken */
 .filterBox:hover:checked::before {
   color: #ffeb3b; /* Hellerer Haken bei Hover */
+}
+
+@media (prefers-contrast: more) {
+  .jmpButton,
+  #navButtons,
+  #navButtonsPoint,
+  #CardsMainGrid,
+  #Main,
+  #Header,
+  #WikiMain,
+  #WikiHeader,
+  #sideBar,
+  #lukeImg,
+  #johannImg,
+  #niclasImg,
+  #filterContainer,
+  #PB-Img {
+    border: 2px solid #ffffffa7;
+    border-radius: 25px;
+  }
 }

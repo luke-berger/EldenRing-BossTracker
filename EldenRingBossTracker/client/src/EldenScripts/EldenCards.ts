@@ -132,6 +132,8 @@ function createCards(items: Item[]): void {
   // Container leeren
   container.innerHTML = "";
 
+  const isHighContrast = window.matchMedia("(prefers-contrast: more)").matches;
+
   // Neue Karten erstellen
   items.forEach((item) => {
     const card = document.createElement("div");
@@ -152,9 +154,16 @@ function createCards(items: Item[]): void {
       "shadow-lg",
       "bg-black", // Hintergrund schwarz
       "bg-opacity-50", // Leicht transparent
-      "relative", // Relativer Positionierungskontext für die Checkbox
-      isRemembranceBoss ? "border-gold" : "border-white" // Goldener Rand für Remembrance Bosse, sonst weiß
+      "relative" // Relativer Positionierungskontext für die Checkbox
     );
+
+    // High Contrast Mode: Weißer Rand für alle Karten im High Contrast Mode
+    if (isHighContrast) {
+      card.classList.add("border-4", "border-white"); // Weißer Rand im High Contrast Mode
+    } else {
+      card.classList.add(isRemembranceBoss ? "border-gold" : "border-cards");
+    }
+
     if (!isKilled) {
       const title = document.createElement("h2");
       title.classList.add("text-2xl", "font-bold", "text-white"); // Weißer Text für den Titel
