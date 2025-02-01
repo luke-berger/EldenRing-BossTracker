@@ -17,7 +17,7 @@ function createWikiList(items: Item[]): void {
     const nameLink = document.createElement("a");
     if (
       item.name === "Maliketh, The Black Blade" ||
-      item.name === "Malenia, Blade of Miquella" ||
+      item.name === "Malenia, Blade Of Miquella" ||
       item.name === "Astel, Stars Of Darkness"
     ) {
       nameLink.href = `./${item.name}.html`;
