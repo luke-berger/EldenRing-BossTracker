@@ -88,6 +88,7 @@
   border-bottom: 2px solid #7c602a; /* Goldener Rand */
   gap: 25px;
   margin-bottom: 3rem;
+  color: #531717;
 }
 
 #sideBar {
@@ -171,4 +172,39 @@
 /* Border for Normal Bosses */
 .border-white {
   border: 2px solid rgb(54, 49, 25);
+}
+
+/* Allgemeine Checkbox-Stile */
+.filterBox {
+  appearance: none;
+  width: 1rem; /* w-6 */
+  height: 1rem; /* h-6 */
+  border-width: 2px;
+  border-color: #c8a55f;
+  border-radius: 0.375rem; /* rounded-md */
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(200, 165, 95, 0.2);
+}
+
+/* Checkbox im "Checked"-Zustand */
+.filterBox:checked {
+  background-color: #c8a55f;
+  border-color: white;
+}
+
+/* Hover-Effekte */
+.filterBox:hover {
+  box-shadow: 0 1px 3px rgba(200, 165, 95, 0.3);
+}
+
+/* Weißer Haken im "Checked"-Zustand */
+.filterBox:checked::before {
+  content: "✓";
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -155,112 +155,272 @@ function createCards(items: Item[]): void {
       "relative", // Relativer Positionierungskontext für die Checkbox
       isRemembranceBoss ? "border-gold" : "border-white" // Goldener Rand für Remembrance Bosse, sonst weiß
     );
+    if (!isKilled) {
+      const title = document.createElement("h2");
+      title.classList.add("text-2xl", "font-bold", "text-white"); // Weißer Text für den Titel
+      title.textContent = item.name;
+      card.appendChild(title);
 
-    const title = document.createElement("h2");
-    title.classList.add("text-2xl", "font-bold", "text-white"); // Weißer Text für den Titel
-    title.textContent = item.name;
-    card.appendChild(title);
+      const img2 = document.createElement("img");
+      img2.src = "../EldenPictures/line2.png";
+      img2.alt = `Bild von einer Linie`;
+      img2.classList.add("w-full", "object-cover", "rounded", "mb-2");
+      card.appendChild(img2);
 
-    const img2 = document.createElement("img");
-    img2.src = "../EldenPictures/line2.png";
-    img2.alt = `Bild von einer Linie`;
-    img2.classList.add("w-full", "object-cover", "rounded", "mb-2");
-    card.appendChild(img2);
+      const img = document.createElement("img");
+      img.src = item.image || "https://via.placeholder.com/150";
+      img.alt = `Bild von ${item.name}`;
+      img.classList.add("w-full", "h-96", "object-cover", "rounded", "mb-4");
+      card.appendChild(img);
 
-    const img = document.createElement("img");
-    img.src = item.image || "https://via.placeholder.com/150";
-    img.alt = `Bild von ${item.name}`;
-    img.classList.add("w-full", "h-96", "object-cover", "rounded", "mb-4");
-    card.appendChild(img);
+      const description = document.createElement("p");
+      description.classList.add("mb-2", "text-white"); // Weißer Text für die Beschreibung
+      description.innerHTML = `<span class="font-bold">Description:</span> ${item.description}`;
+      card.appendChild(description);
 
-    const description = document.createElement("p");
-    description.classList.add("mb-2", "text-white"); // Weißer Text für die Beschreibung
-    description.innerHTML = `<span class="font-bold">Description:</span> ${item.description}`;
-    card.appendChild(description);
+      const region = document.createElement("p");
+      region.classList.add("mb-2", "text-white"); // Weißer Text für Region
+      region.innerHTML = `<span class="font-bold">Region:</span> ${item.region}`;
+      card.appendChild(region);
 
-    const region = document.createElement("p");
-    region.classList.add("mb-2", "text-white"); // Weißer Text für Region
-    region.innerHTML = `<span class="font-bold">Region:</span> ${item.region}`;
-    card.appendChild(region);
+      const location = document.createElement("p");
+      location.classList.add("mb-2", "text-white"); // Weißer Text für Location
+      location.innerHTML = `<span class="font-bold">Location:</span> ${item.location}`;
+      card.appendChild(location);
 
-    const location = document.createElement("p");
-    location.classList.add("mb-2", "text-white"); // Weißer Text für Location
-    location.innerHTML = `<span class="font-bold">Location:</span> ${item.location}`;
-    card.appendChild(location);
+      const healthPoints = document.createElement("p");
+      healthPoints.classList.add("mb-2", "text-white"); // Weißer Text für Health Points
+      healthPoints.innerHTML = `<span class="font-bold">Health Points:</span> ${item.healthPoints} <img src="../EldenPictures/heart.webp" alt="Heart" class="inline-block ml-2 w-6 h-6">`;
+      card.appendChild(healthPoints);
 
-    const healthPoints = document.createElement("p");
-    healthPoints.classList.add("mb-2", "text-white"); // Weißer Text für Health Points
-    healthPoints.innerHTML = `<span class="font-bold">Health Points:</span> ${item.healthPoints} <img src="../EldenPictures/heart.webp" alt="Heart" class="inline-block ml-2 w-6 h-6">`;
-    card.appendChild(healthPoints);
-
-    // Runen suchen und darstellen
-    const runeDrop = item.drops.find((drop) =>
-      drop.toLowerCase().includes("runes")
-    );
-    const runes = document.createElement("p");
-    runes.classList.add("mb-4", "text-white"); // Weißer Text für Runen
-    if (runeDrop) {
-      runes.innerHTML = `<span class="font-bold">Runes:</span> ${runeDrop} <img src="../EldenPictures/runes.webp" alt="Rune" class="inline-block ml-2 w-4 h-4">`;
-      // Entfernen der Runen aus den Drops
-      item.drops = item.drops.filter(
-        (drop) => !drop.toLowerCase().includes("runes")
+      // Runen suchen und darstellen
+      const runeDrop = item.drops.find((drop) =>
+        drop.toLowerCase().includes("runes")
       );
+      const runes = document.createElement("p");
+      runes.classList.add("mb-4", "text-white"); // Weißer Text für Runen
+      if (runeDrop) {
+        runes.innerHTML = `<span class="font-bold">Runes:</span> ${runeDrop} <img src="../EldenPictures/runes.webp" alt="Rune" class="inline-block ml-2 w-4 h-4">`;
+        // Entfernen der Runen aus den Drops
+        item.drops = item.drops.filter(
+          (drop) => !drop.toLowerCase().includes("runes")
+        );
+      } else {
+        runes.innerHTML = `<span class="font-bold">Runes:</span> Keine Runen-Drops`;
+      }
+      card.appendChild(runes);
+
+      const drops = document.createElement("p");
+      drops.classList.add("mb-4", "text-white");
+      drops.innerHTML = `<span class="font-bold">Drops:</span> ${item.drops.join(", ")}`;
+      card.appendChild(drops);
+
+      const button = document.createElement("a");
+      button.classList.add(
+        "bg-[#7c602a]",
+        "text-white",
+        "py-3",
+        "px-3",
+        "rounded",
+        "hover:bg-red-700"
+      );
+      button.textContent = "Learn More";
+      button.href = "../EldenSites/EldenWiki.html";
+      card.appendChild(button);
+
+      // Checkbox hinzufügen
+      const checkboxWrapper = document.createElement("div");
+      checkboxWrapper.classList.add(
+        "absolute",
+        "bottom-4",
+        "right-4",
+        "flex",
+        "items-center"
+      );
+
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.classList.add(
+        "appearance-none",
+        "w-8",
+        "h-8",
+        "border-2",
+        "border-[#c8a55f]",
+        "rounded-md",
+        "bg-black",
+        "cursor-pointer",
+        "transition",
+        "duration-300",
+        "checked:bg-[#531717]",
+        "checked:border-red-400",
+        "shadow-md",
+        "shadow-[#c8a55f]/20", // Weniger intensiver Schatten
+        "hover:shadow-sm",
+        "hover:shadow-[#c8a55f]/30", // Weniger stark beim Hover
+        "checked:before:content-['❌']", // Weißer Haken beim Aktivieren
+        "checked:before:text-gray-300", // Weißer Haken
+        "checked:before:absolute",
+        "checked:before:top-1/2",
+        "checked:before:left-1/2",
+        "checked:before:transform",
+        "checked:before:translate-x-[-50%]",
+        "checked:before:translate-y-[-50%]"
+      );
+      checkbox.setAttribute("data-boss-id", item.id);
+
+      checkbox.checked = isKilled;
+      item.categories[0] = isKilled ? "Killed" : "Alive";
+
+      checkbox.addEventListener("change", async () => {
+        await updateBossStatus(item.id, item.categories);
+      });
+
+      checkboxWrapper.appendChild(checkbox);
+      card.appendChild(checkboxWrapper);
+
+      container.appendChild(card);
     } else {
-      runes.innerHTML = `<span class="font-bold">Runes:</span> Keine Runen-Drops`;
+      const title = document.createElement("h2");
+      title.classList.add("text-2xl", "font-bold", "text-gray-700"); // Weißer Text für den Titel
+      title.textContent = item.name;
+      card.appendChild(title);
+
+      const img2 = document.createElement("img");
+      img2.src = "../EldenPictures/line2.png";
+      img2.alt = `Bild von einer Linie`;
+      img2.classList.add(
+        "w-full",
+        "object-cover",
+        "rounded",
+        "mb-2",
+        "filter",
+        "brightness-50"
+      );
+      card.appendChild(img2);
+
+      const img = document.createElement("img");
+      img.src = item.image || "https://via.placeholder.com/150";
+      img.alt = `Bild von ${item.name}`;
+      img.classList.add(
+        "w-full",
+        "h-96",
+        "object-cover",
+        "rounded",
+        "mb-4",
+        "filter",
+        "brightness-50"
+      );
+      card.appendChild(img);
+
+      const description = document.createElement("p");
+      description.classList.add("mb-2", "text-gray-700"); // Weißer Text für die Beschreibung
+      description.innerHTML = `<span class="font-bold">Description:</span> ${item.description}`;
+      card.appendChild(description);
+
+      const region = document.createElement("p");
+      region.classList.add("mb-2", "text-gray-700"); // Weißer Text für Region
+      region.innerHTML = `<span class="font-bold">Region:</span> ${item.region}`;
+      card.appendChild(region);
+
+      const location = document.createElement("p");
+      location.classList.add("mb-2", "text-gray-700"); // Weißer Text für Location
+      location.innerHTML = `<span class="font-bold">Location:</span> ${item.location}`;
+      card.appendChild(location);
+
+      const healthPoints = document.createElement("p");
+      healthPoints.classList.add("mb-2", "text-gray-700"); // Weißer Text für Health Points
+      healthPoints.innerHTML = `<span class="font-bold">Health Points:</span> ${item.healthPoints} <img src="../EldenPictures/heart.webp" alt="Heart" class="inline-block ml-2 w-6 h-6 filter brightness-50">`;
+      card.appendChild(healthPoints);
+
+      // Runen suchen und darstellen
+      const runeDrop = item.drops.find((drop) =>
+        drop.toLowerCase().includes("runes")
+      );
+      const runes = document.createElement("p");
+      runes.classList.add("mb-4", "text-gray-700"); // Weißer Text für Runen
+      if (runeDrop) {
+        runes.innerHTML = `<span class="font-bold">Runes:</span> ${runeDrop} <img src="../EldenPictures/runes.webp" alt="Rune" class="inline-block ml-2 w-4 h-4 filter brightness-50">`;
+        // Entfernen der Runen aus den Drops
+        item.drops = item.drops.filter(
+          (drop) => !drop.toLowerCase().includes("runes")
+        );
+      } else {
+        runes.innerHTML = `<span class="font-bold">Runes:</span> Keine Runen-Drops`;
+      }
+      card.appendChild(runes);
+
+      const drops = document.createElement("p");
+      drops.classList.add("mb-4", "text-gray-700"); // Weißer Text für Drops
+      drops.innerHTML = `<span class="font-bold">Drops:</span> ${item.drops.join(", ")}`;
+      card.appendChild(drops);
+
+      const button = document.createElement("a");
+      button.classList.add(
+        "bg-[#4a3a197b]",
+        "text-gray-600",
+        "py-3",
+        "px-3",
+        "rounded",
+        "hover:bg-red-900",
+        "hover:text-gray-400"
+      );
+      button.textContent = "Learn More";
+      button.href = "../EldenSites/EldenWiki.html";
+      card.appendChild(button);
+
+      // Checkbox hinzufügen
+      const checkboxWrapper = document.createElement("div");
+      checkboxWrapper.classList.add(
+        "absolute",
+        "bottom-4",
+        "right-4",
+        "flex",
+        "items-center"
+      );
+
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.classList.add(
+        "appearance-none",
+        "w-8",
+        "h-8",
+        "border-2",
+        "border-[#c8a55f]",
+        "rounded-md",
+        "bg-black",
+        "cursor-pointer",
+        "transition",
+        "duration-300",
+        "checked:bg-[#531717]",
+        "checked:border-red-400",
+        "shadow-md",
+        "shadow-[#c8a55f]/20", // Weniger intensiver Schatten
+        "hover:shadow-sm",
+        "hover:shadow-[#c8a55f]/30", // Weniger stark beim Hover
+        "checked:before:content-['❌']", // Weißer Haken beim Aktivieren
+        "checked:before:text-gray-300", // Weißer Haken
+        "checked:before:absolute",
+        "checked:before:top-1/2",
+        "checked:before:left-1/2",
+        "checked:before:transform",
+        "checked:before:translate-x-[-50%]",
+        "checked:before:translate-y-[-50%]"
+      );
+      checkbox.setAttribute("data-boss-id", item.id);
+
+      checkbox.checked = isKilled;
+      item.categories[0] = isKilled ? "Killed" : "Alive";
+
+      checkbox.addEventListener("change", async () => {
+        await updateBossStatus(item.id, item.categories);
+      });
+
+      checkboxWrapper.appendChild(checkbox);
+      card.appendChild(checkboxWrapper);
+
+      container.appendChild(card);
     }
-    card.appendChild(runes);
-
-    const drops = document.createElement("p");
-    drops.classList.add("mb-4", "text-white"); // Weißer Text für Drops
-    drops.innerHTML = `<span class="font-bold">Drops:</span> ${item.drops.join(", ")}`;
-    card.appendChild(drops);
-
-    const button = document.createElement("button");
-    button.classList.add(
-      "bg-[#7c602a]",
-      "text-gray-100",
-      "py-2",
-      "px-4",
-      "rounded",
-      "hover:bg-red-700"
-    );
-    button.textContent = "Learn More";
-    card.appendChild(button);
-
-    // Checkbox hinzufügen
-    const checkboxWrapper = document.createElement("div");
-    checkboxWrapper.classList.add(
-      "absolute",
-      "bottom-4",
-      "right-4",
-      "flex",
-      "items-center"
-    );
-
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.classList.add(
-      "w-5",
-      "h-5",
-      "border-2",
-      "border-white",
-      "rounded-md",
-      "focus:ring-2",
-      "focus:ring-white"
-    );
-    checkbox.setAttribute("data-boss-id", item.id);
-
-    checkbox.checked = isKilled;
-    item.categories[0] = isKilled ? "Killed" : "Alive";
-
-    checkbox.addEventListener("change", async () => {
-      await updateBossStatus(item.id, item.categories);
-    });
-
-    checkboxWrapper.appendChild(checkbox);
-    card.appendChild(checkboxWrapper);
-
-    container.appendChild(card);
+    console.log(`Boss: ${item.name}, isKilled: ${isKilled}`);
   });
 }
 
