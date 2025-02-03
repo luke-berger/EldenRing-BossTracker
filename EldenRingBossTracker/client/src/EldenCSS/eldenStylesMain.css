@@ -198,8 +198,12 @@
 }
 
 /* Border for Normal Bosses */
-.border-white {
+.border-cards {
   border: 2px solid rgb(54, 49, 25);
+}
+
+.border-white {
+  border: 2px solid #ffffffa7;
 }
 
 /* Allgemeine Checkbox-Stile */
@@ -246,26 +250,22 @@
   color: #ffeb3b; /* Hellerer Haken bei Hover */
 }
 
-/* SCROLLING */
-/* Sidebar fixieren und scrollbar machen */
-#sideBar {
-  width: 280px; /* Breite der Sidebar */
-  height: 100vh; /* Volle Bildschirmhöhe */
-  overflow-y: auto; /* Scrollbar nur für die Sidebar */
-  background-color: rgba(0, 0, 0, 0.8); /* Optional: Dunkler Hintergrund */
-  padding: 20px;
-}
-
-/* Hauptinhalt ebenfalls scrollbar machen */
-#WikiMain {
-  flex: 1; /* Nimmt den restlichen Platz ein */
-  height: 100vh; /* Volle Bildschirmhöhe */
-  overflow-y: auto; /* Ermöglicht Scrollen im Hauptinhalt */
-  padding: 20px;
-}
-
-/* Anpassung der Scrollbar */
-* {
-  scrollbar-color: #a88237 rgba(0, 0, 0, 0.6); /* (Thumb, Track) */
-  scrollbar-width: thin; /* Schmale Scrollbar */
+@media (prefers-contrast: more) {
+  .jmpButton,
+  #navButtons,
+  #navButtonsPoint,
+  #CardsMainGrid,
+  #Main,
+  #Header,
+  #WikiMain,
+  #WikiHeader,
+  #sideBar,
+  #lukeImg,
+  #johannImg,
+  #niclasImg,
+  #filterContainer,
+  #PB-Img {
+    border: 2px solid #ffffffa7;
+    border-radius: 25px;
+  }
 }
