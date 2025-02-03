@@ -269,3 +269,27 @@
     border-radius: 25px;
   }
 }
+
+/* SCROLLING */
+/* Sidebar fixieren und scrollbar machen */
+#sideBar {
+  width: 280px; /* Breite der Sidebar */
+  height: 100vh; /* Volle Bildschirmhöhe */
+  overflow-y: auto; /* Scrollbar nur für die Sidebar */
+  background-color: rgba(0, 0, 0, 0.8); /* Optional: Dunkler Hintergrund */
+  padding: 20px;
+}
+
+/* Hauptinhalt ebenfalls scrollbar machen */
+#WikiMain {
+  flex: 1; /* Nimmt den restlichen Platz ein */
+  height: 100vh; /* Volle Bildschirmhöhe */
+  overflow-y: auto; /* Ermöglicht Scrollen im Hauptinhalt */
+  padding: 20px;
+}
+
+/* Anpassung der Scrollbar */
+* {
+  scrollbar-color: #a88237 rgba(0, 0, 0, 0.6); /* (Thumb, Track) */
+  scrollbar-width: thin; /* Schmale Scrollbar */
+}
