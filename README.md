@@ -16,6 +16,7 @@ The boss dataset is based on the open-source [ELDEN RING API](https://eldenring.
 ## Contributors
 - Luke Berger – Lead Developer & Project Coordinator
 - Niclas Prapavat – Lead Developer
+- Johann Gutzke – Concept Contributor
 
 ## Project status
 Although not all planned features were implemented, the project is considered complete and no further development is planned.
