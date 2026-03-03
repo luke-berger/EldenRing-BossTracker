@@ -11,8 +11,8 @@ const filterByCategory: filterFn = (inputArray, categoryArray) => {
     (item) =>
       Array.isArray(item.categories) &&
       item.categories.some((category: string) =>
-        categoryArray.includes(category)
-      )
+        categoryArray.includes(category),
+      ),
   );
 };
 // Asynchrone Funktion fetchGet
@@ -23,7 +23,7 @@ export async function fetchGet(): Promise<Item[]> {
   // Wenn Kategorien ausgewählt sind, werden diese als URL-Parameter hinzugefügt
   if (selectedCategories.length > 0) {
     selectedCategories.forEach((category) =>
-      searchParams.append("search", category)
+      searchParams.append("search", category),
     );
   }
 
@@ -77,7 +77,7 @@ export async function fetchPost(newItem: Item): Promise<void> {
     if (error instanceof SyntaxError) {
       console.error("JSON-Syntaxfehler:", error.message);
       alert(
-        "Das JSON-Format ist fehlerhaft. Bitte überprüfen Sie Ihre Eingaben."
+        "Das JSON-Format ist fehlerhaft. Bitte überprüfen Sie Ihre Eingaben.",
       );
     } else {
       console.error("Fehler beim Senden der Daten:", error);
@@ -89,7 +89,7 @@ export async function fetchPost(newItem: Item): Promise<void> {
 // Funktion zum Updaten des Boss-Status mit PATCH
 async function updateBossStatus(
   bossId: string,
-  categories: string[]
+  categories: string[],
 ): Promise<void> {
   const baseUrl = `http://127.0.0.1:3001/api/items`;
 
@@ -143,7 +143,7 @@ function createCards(items: Item[]): void {
 
     // Überprüfen, ob 'remembrance' in den Drops des Bosses vorhanden ist, um den goldenen Rand zu setzen
     const isRemembranceBoss = item.drops.some((drop) =>
-      drop.toLowerCase().includes("remembrance")
+      drop.toLowerCase().includes("remembrance"),
     );
 
     card.classList.add(
@@ -154,7 +154,7 @@ function createCards(items: Item[]): void {
       "shadow-lg",
       "bg-black", // Hintergrund schwarz
       "bg-opacity-50", // Leicht transparent
-      "relative" // Relativer Positionierungskontext für die Checkbox
+      "relative", // Relativer Positionierungskontext für die Checkbox
     );
 
     // High Contrast Mode: Weißer Rand für alle Karten im High Contrast Mode
@@ -219,7 +219,7 @@ function createCards(items: Item[]): void {
         "py-3",
         "px-3",
         "rounded",
-        "hover:bg-red-700"
+        "hover:bg-red-700",
       );
       button.textContent = "Learn More";
       button.href = "../EldenSites/EldenWiki.html";
@@ -232,7 +232,7 @@ function createCards(items: Item[]): void {
         "bottom-4",
         "right-4",
         "flex",
-        "items-center"
+        "items-center",
       );
 
       const checkbox = document.createElement("input");
@@ -261,7 +261,7 @@ function createCards(items: Item[]): void {
         "checked:before:left-1/2",
         "checked:before:transform",
         "checked:before:translate-x-[-50%]",
-        "checked:before:translate-y-[-50%]"
+        "checked:before:translate-y-[-50%]",
       );
       checkbox.setAttribute("data-boss-id", item.id);
 
@@ -296,7 +296,7 @@ function createCards(items: Item[]): void {
         "rounded",
         "mb-2",
         "filter",
-        "brightness-50"
+        "brightness-50",
       );
       card.appendChild(img2);
 
@@ -310,7 +310,7 @@ function createCards(items: Item[]): void {
         "rounded",
         "mb-4",
         "filter",
-        "brightness-50"
+        "brightness-50",
       );
       card.appendChild(img);
 
@@ -352,7 +352,7 @@ function createCards(items: Item[]): void {
         "px-3",
         "rounded",
         "hover:bg-red-900",
-        "hover:text-gray-400"
+        "hover:text-gray-400",
       );
       button.textContent = "Learn More";
       button.href = "../EldenSites/EldenWiki.html";
@@ -365,7 +365,7 @@ function createCards(items: Item[]): void {
         "bottom-4",
         "right-4",
         "flex",
-        "items-center"
+        "items-center",
       );
 
       const checkbox = document.createElement("input");
@@ -394,7 +394,7 @@ function createCards(items: Item[]): void {
         "checked:before:left-1/2",
         "checked:before:transform",
         "checked:before:translate-x-[-50%]",
-        "checked:before:translate-y-[-50%]"
+        "checked:before:translate-y-[-50%]",
       );
       checkbox.setAttribute("data-boss-id", item.id);
 
@@ -422,7 +422,7 @@ function createCards(items: Item[]): void {
 document.addEventListener("DOMContentLoaded", async () => {
   const items = await fetchGet(); // Alle Items laden
   const categoryCheckboxes = document.querySelectorAll<HTMLInputElement>(
-    'input[class^="filterBox"]'
+    'input[class^="filterBox"]',
   );
 
   createCards(items); // Initiale Kartenanzeige
