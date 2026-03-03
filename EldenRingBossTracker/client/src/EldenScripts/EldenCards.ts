@@ -269,7 +269,12 @@ function createCards(items: Item[]): void {
       item.categories[0] = isKilled ? "Killed" : "Alive";
 
       checkbox.addEventListener("change", async () => {
+        // Update categories based on new checkbox state
+        item.categories[0] = checkbox.checked ? "Killed" : "Alive";
         await updateBossStatus(item.id, item.categories);
+        // Refresh the card display after updating boss status
+        const updatedItems = await fetchGet();
+        createCards(updatedItems);
       });
 
       checkboxWrapper.appendChild(checkbox);
@@ -397,7 +402,12 @@ function createCards(items: Item[]): void {
       item.categories[0] = isKilled ? "Killed" : "Alive";
 
       checkbox.addEventListener("change", async () => {
+        // Update categories based on new checkbox state
+        item.categories[0] = checkbox.checked ? "Killed" : "Alive";
         await updateBossStatus(item.id, item.categories);
+        // Refresh the card display after updating boss status
+        const updatedItems = await fetchGet();
+        createCards(updatedItems);
       });
 
       checkboxWrapper.appendChild(checkbox);

@@ -30,7 +30,7 @@
       ],
       "healthPoints": "17,482",
       "categories": [
-        "Alive"
+        "Killed"
       ],
       "runes": [
         "80.000 Runes"
@@ -48,7 +48,7 @@
       ],
       "healthPoints": "1,710",
       "categories": [
-        "Alive"
+        "Killed"
       ],
       "runes": [
         "3.600 Runes"
@@ -891,7 +891,8 @@
       "healthPoints": "21,903",
       "categories": [
         "Alive",
-        "Progression"
+        "Progression",
+        "Major"
       ],
       "runes": [
         "300,000  Runes"
